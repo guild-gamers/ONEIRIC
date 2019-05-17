@@ -1,7 +1,7 @@
 # ONEIRIC
 
 # Autores
-Kevin Marin Romero
+Kevin Marin Romero \n
 Jaime Francisco Rebollo Domínguez
 
 # ¿Que es Oneiric?
