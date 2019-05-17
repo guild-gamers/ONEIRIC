@@ -1,7 +1,7 @@
 # ONEIRIC
 
 # Autores / <i>Authors</i>
-Kevin Marin Romero <br/>
+Kevin Marín Romero <br/>
 Jaime Francisco Rebollo Domínguez
 
 # ¿Que es Oneiric? / <i>¿What is Oneiric?</i>
