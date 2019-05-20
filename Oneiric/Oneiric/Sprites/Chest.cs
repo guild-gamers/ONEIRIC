@@ -7,49 +7,73 @@ class Chest : InteractibleElement
     protected int rarity;
     protected int maxItems;
     protected List<Item> items;
-    protected Random r;
-    public Chest(int rarity)
+    public Chest(string image, int rarity)
+        :base(image)
     {
         this.rarity = rarity;
-        r = new Random();
-        maxItems = r.Next(rarity, rarity*2);
+        maxItems = Game.rand.Next(rarity, rarity*2 + 1);
+        SdlHardware.Pause(40);
         items = new List<Item>();
         AddItems();
     }
 
     public void AddItems()
     {
-        try
+        while (items.Count == 0)
         {
-            StreamReader file = File.OpenText("data/sys/items.dat");
-            string line = "";
-
-            do
+            try
             {
-                line = file.ReadLine();
+                StreamReader file = File.OpenText("data/sys/items.dat");
+                string line = "";
 
-                if (line != null)
+                do
                 {
-                    string[] data = line.Split(';');
+                    line = file.ReadLine();
 
-                    if (Convert.ToInt32(data[data.Length-1]) == rarity)
+                    if (line != null)
                     {
-                        if (r.Next(0, 1) == 0)
+                        string[] data = line.Split(';');
+
+                        if (Convert.ToInt32(data[data.Length - 1]) == rarity)
                         {
-                            items.Add(new Item(data[0], Convert.ToInt32(data[1]),
-                                Convert.ToInt32(data[2]), Convert.ToInt32(data[3]),
-                                Convert.ToInt32(data[4]), Convert.ToInt32(data[5])));
-                        }                            
+                            if (Game.rand.Next(0, 4) == 1)
+                            {
+                                items.Add(new Item(data[0], Convert.ToInt32(data[1]),
+                                    Convert.ToInt32(data[2]), Convert.ToInt32(data[3]),
+                                    Convert.ToInt32(data[4]), Convert.ToInt32(data[5])));
+                            }
+                        }
                     }
-                }
-            } while (line != null && items.Count < maxItems);
+                } while (line != null && items.Count < maxItems);
 
-            file.Close();
+                file.Close();
+            }
+            catch (PathTooLongException)
+            {
+                Oneiric.SaveLog("Path too long Error");
+            }
+            catch (FileNotFoundException)
+            {
+                Oneiric.SaveLog("File Not Found");
+            }
+            catch (IOException e)
+            {
+                Oneiric.SaveLog("IO Error: " + e);
+            }
+            catch (Exception e)
+            {
+                Oneiric.SaveLog("Error: " + e);
+            }
         }
-        catch (Exception)
+    }
+
+    public void Interactue(MainCharacter c)
+    {
+        foreach (Item item in items)
         {
-
-            throw;
+            c.AddItem(item);
         }
+        items.Clear();
+        LoadImage("data/images/map/computerOn.png");
     }
 }

@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 
 class MainCharacter : Character
 {
+    protected List<Item> inventory;
+
     public MainCharacter()
     {
         LoadSequence(RIGHT,
@@ -26,7 +29,10 @@ class MainCharacter : Character
         xSpeed = ySpeed = 8;
         width = 37;
         height = 47;
+        inventory = new List<Item>();
     }
+
+    public List<Item> GetInventory() { return inventory; }
 
     public void MoveRight()
     {
@@ -50,5 +56,10 @@ class MainCharacter : Character
     {
         y += ySpeed;
         NextFrame();
+    }
+
+    public void AddItem(Item i)
+    {
+        inventory.Add(i);
     }
 }

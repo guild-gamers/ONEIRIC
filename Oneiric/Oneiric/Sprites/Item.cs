@@ -1,19 +1,19 @@
 ﻿class Item : Sprite
 {
-    protected string name;
-    protected int damageIncreaser;
-    protected int defenseIncreaser;
-    protected int speedIncreaser;
-    protected int luckyIncreaser;
-    protected int rarity;
+    public string Name { get; set; }
+    public int DamageIncreaser { get; set; }
+    public int DefenseIncreaser { get; set; }
+    public int SpeedIncreaser { get; set; }
+    public int LuckyIncreaser { get; set; }
+    public int Rarity { get; set; }
 
     public Item(string name, int daI, int deI, int spI, int luI, int rarity)
     {
-        this.name = name;
-        damageIncreaser = daI;
-        defenseIncreaser = deI;
-        speedIncreaser = spI;
-        luckyIncreaser = luI;
-        this.rarity = rarity;
+        Name = name;
+        DamageIncreaser = daI;
+        DefenseIncreaser = deI;
+        SpeedIncreaser = spI;
+        LuckyIncreaser = luI;
+        Rarity = rarity;
     }
 }

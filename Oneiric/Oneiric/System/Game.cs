@@ -6,7 +6,7 @@ class Game
     public Room Groom { get; set; }
     protected bool finished;
     protected Font font18;
-    protected Random rand;
+    public static Random rand;
     public int Steps { get; set; }
     protected int randMax = 350;
     protected int randMin = 50;
@@ -139,6 +139,22 @@ class Game
                 Mcharacter.NextFrame();
             }
             Mcharacter.ChangeDirection(Sprite.DOWN);
+        }
+        else if (SdlHardware.KeyPressed(SdlHardware.KEY_A))
+        {
+            SdlHardware.Pause(100);
+            foreach (Chest c in Groom.chests)
+            {
+                if (c.canInteractue(Mcharacter))
+                {
+                    c.Interactue(Mcharacter);
+                }
+            }
+            Console.Clear();
+            foreach (Item i in Mcharacter.GetInventory())
+            {
+                Console.WriteLine(i.Name);
+            }
         }
 
         if (SdlHardware.KeyPressed(SdlHardware.KEY_I))

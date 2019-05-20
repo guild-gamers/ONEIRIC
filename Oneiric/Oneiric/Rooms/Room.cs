@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
+using System.IO;
 
 class Room
 {
@@ -18,13 +19,15 @@ class Room
     public byte ActualCol = 1;
     public byte ActualRow = 1;
 
+    public List<Chest> chests;
+
     public Room()
     {
         images[0] = new Image("data/images/map/floor1.jpg");
         images[1] = new Image("data/images/map/wall1Down.jpg");
         images[2] = new Image("data/images/map/table.png");
-        images[3] = new Image("data/images/map/computerOff.png");
         levelData = File.ReadAllLines("data/maps/level.map");
+        chests = new List<Chest>();
         mapData = new char[mapWidth, mapHeight];
         UpdateScreenMap(ActualCol, ActualRow);
     }
@@ -33,6 +36,7 @@ class Room
 
     public void UpdateScreenMap(int col, int row)
     {
+        chests.Clear();
         int startRow = row * mapHeight;
         int startCol = col * mapWidth;
 
@@ -61,16 +65,26 @@ class Room
                         SdlHardware.DrawHiddenImage(images[1], posX,
                         posY); break;
                     case 'C':
-
+                        mapData[col, row] = 'T';
                         SdlHardware.DrawHiddenImage(images[0], posX,
                         posY);
                         SdlHardware.DrawHiddenImage(images[2], posX,
                         posY);
-                        SdlHardware.DrawHiddenImage(images[3], posX,
-                        posY); break;
+                        Chest c = new Chest("data/images/map/computerOff.png", 1);
+                        c.MoveTo(posX,posY);
+                        chests.Add(c);
+                        break;
+                    case 'T':
+                        SdlHardware.DrawHiddenImage(images[0], posX,
+                        posY);
+                        SdlHardware.DrawHiddenImage(images[2], posX,
+                        posY);
+                        break;
                 }
             }
         }
+        foreach (Chest c in chests)
+            c.DrawOnHiddenScreen();
     }
 
     public bool CanMoveTo(int x1, int y1, int x2, int y2)

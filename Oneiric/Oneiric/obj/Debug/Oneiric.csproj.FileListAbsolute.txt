@@ -14,3 +14,11 @@ D:\Desktop\docs\Oneiric\obj\Debug\Oneiric.csproj.CoreCompileInputs.cache
 D:\Desktop\docs\Oneiric\obj\Debug\Oneiric.csproj.CopyComplete
 D:\Desktop\docs\Oneiric\obj\Debug\Oneiric.exe
 D:\Desktop\docs\Oneiric\obj\Debug\Oneiric.pdb
+D:\Desktop\ONEIRIC\Oneiric\Oneiric\bin\Debug\Oneiric.exe.config
+D:\Desktop\ONEIRIC\Oneiric\Oneiric\bin\Debug\Oneiric.exe
+D:\Desktop\ONEIRIC\Oneiric\Oneiric\bin\Debug\Oneiric.pdb
+D:\Desktop\ONEIRIC\Oneiric\Oneiric\obj\Debug\Oneiric.csprojAssemblyReference.cache
+D:\Desktop\ONEIRIC\Oneiric\Oneiric\obj\Debug\Oneiric.csproj.CoreCompileInputs.cache
+D:\Desktop\ONEIRIC\Oneiric\Oneiric\obj\Debug\Oneiric.csproj.CopyComplete
+D:\Desktop\ONEIRIC\Oneiric\Oneiric\obj\Debug\Oneiric.exe
+D:\Desktop\ONEIRIC\Oneiric\Oneiric\obj\Debug\Oneiric.pdb
