@@ -2,7 +2,7 @@
 
 class BattleScreen : Screen
 {
-    protected Image selector;
+    protected Image selector, menu;
     protected int option;
     protected Font font72;
 
@@ -14,7 +14,8 @@ class BattleScreen : Screen
             new Font("data/fonts/Joystix.ttf", 28))
     {
         option = 0;
-        selector = new Image("data/images/other/selector.png");
+        selector = new Image("data/images/other/selector2.png");
+        menu = new Image("data/images/other/screen_battle.png");
         font72 = new Font("data/fonts/Joystix.ttf", 72);
         texts = new Dictionary<string, string>();
     }
@@ -27,7 +28,7 @@ class BattleScreen : Screen
     public int Run()
     {
         option = 0;
-        LoadText(Oneiric.Languages[Oneiric.Language], "loadSaveMenu");
+        LoadText(Oneiric.Languages[Oneiric.Language], "battleMenu");
         SdlHardware.Pause(100);
         do
         {
@@ -61,8 +62,15 @@ class BattleScreen : Screen
     public void DrawMenu()
     {
         SdlHardware.DrawHiddenImage(Wallpaper, 0, 0);
-
-        SdlHardware.DrawHiddenImage(selector, option != YCURSOR_MAX ? 235 : 430,
-            250 + 115 * option);
+        SdlHardware.DrawHiddenImage(menu, 650, 500);
+        SdlHardware.WriteHiddenText(texts["at"],
+            682, 522,
+            0x00, 0x00, 0x00,
+            Font28);
+        SdlHardware.WriteHiddenText(texts["at"],
+            680, 520,
+            0xFF, 0xFF, 0xFF,
+            Font28);
+        SdlHardware.DrawHiddenImage(selector, 670, 520 + 40 * option);
     }
 }

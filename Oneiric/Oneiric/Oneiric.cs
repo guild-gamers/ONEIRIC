@@ -88,7 +88,8 @@ class Oneiric
         SdlHardware.Init(1200, 768, 24, FullScreen);
         WelcomeScreen w = new WelcomeScreen();
         os = new OptionsScreen();
-        LoadGamesScreen lg = new LoadGamesScreen();     
+        LoadGamesScreen lg = new LoadGamesScreen();
+        HelpScreen hs = new HelpScreen();
 
         int option;
 
@@ -110,7 +111,8 @@ class Oneiric
                     SaveOptions();
                     SdlHardware.Init(1200, 768, 24, FullScreen);
                     break;
-                case 4: break;
+                case 4: hs.Run();
+                    break;
             }
         } while (option != 5);
         
