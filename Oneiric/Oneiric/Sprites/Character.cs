@@ -16,6 +16,7 @@ abstract class Character : Sprite
     public int DefenseIncreaser { get; set; }
     public int Speed { get; set; }
     public int SpeedIncreaser { get; set; }
+    public int Lucky { get; set; }
     public List<Skill> Skills { get; set; }
 
     public Character() { }

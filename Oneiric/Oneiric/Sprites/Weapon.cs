@@ -1,4 +1,4 @@
-﻿class Weapons : EquipableItem
+﻿class Weapon : EquipableItem
 {
 
 }

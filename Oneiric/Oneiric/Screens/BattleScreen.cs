@@ -6,7 +6,7 @@ class BattleScreen : Screen
     protected int option;
     protected Font font72;
 
-    const int YCURSOR_MAX = 3;
+    const int YCURSOR_MAX = 4;
     const int YCURSOR_MIN = 0;
 
     public BattleScreen()

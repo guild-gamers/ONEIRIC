@@ -3,7 +3,8 @@ using System.Collections.Generic;
 
 class MainCharacter : Character
 {
-    protected List<Item> inventory;
+    public List<Item> Inventory { get; set; }
+    public List<Weapon> Weapons { get; set; }
 
     public MainCharacter()
     {
@@ -29,10 +30,10 @@ class MainCharacter : Character
         xSpeed = ySpeed = 8;
         width = 37;
         height = 47;
-        inventory = new List<Item>();
+        Inventory = new List<Item>();
     }
 
-    public List<Item> GetInventory() { return inventory; }
+    public List<Item> GetInventory() { return Inventory; }
 
     public void MoveRight()
     {
@@ -60,6 +61,6 @@ class MainCharacter : Character
 
     public void AddItem(Item i)
     {
-        inventory.Add(i);
+        Inventory.Add(i);
     }
 }

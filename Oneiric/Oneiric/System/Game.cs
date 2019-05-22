@@ -14,6 +14,8 @@ class Game
     public long Time { get; set; }
     protected GameMenuScreen gm;
     protected BattleScreen bs;
+    public int EnemyMaxLevel { get; set; }
+    public int EnemyMinLevel { get; set; }
 
     public Game()
     {
