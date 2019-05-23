@@ -14,8 +14,7 @@ class Game
     public long Time { get; set; }
     protected GameMenuScreen gm;
     protected BattleScreen bs;
-    public int EnemyMaxLevel { get; set; }
-    public int EnemyMinLevel { get; set; }
+    public static int AverageEnemyLevel { get; set; }
 
     public Game()
     {
@@ -27,6 +26,7 @@ class Game
         Steps = rand.Next(randMin,randMax);
         Time = 0;
         countTimer = 0;
+        AverageEnemyLevel = 6;
         gm = new GameMenuScreen();
     }
 
@@ -42,7 +42,7 @@ class Game
 
     void CheckInput()
     {
-        if (SdlHardware.KeyPressed(SdlHardware.KEY_RIGHT) && Mcharacter.GetX()
+        if (SdlHardware.KeyPressed(SdlHardware.KEY_D) && Mcharacter.GetX()
             >= Groom.MaxRight)
         {
             Groom.ActualCol++;
@@ -50,7 +50,7 @@ class Game
             Mcharacter.MoveTo(0, Mcharacter.GetY());
             Steps--;
         }
-        else if (SdlHardware.KeyPressed(SdlHardware.KEY_RIGHT))
+        else if (SdlHardware.KeyPressed(SdlHardware.KEY_D))
         {
             if (Groom.CanMoveTo(Mcharacter.GetX() + Mcharacter.GetSpeedX(),
                     Mcharacter.GetY(),
@@ -67,7 +67,7 @@ class Game
             }
             Mcharacter.ChangeDirection(Sprite.RIGHT);
         }
-        else if (SdlHardware.KeyPressed(SdlHardware.KEY_LEFT) &&
+        else if (SdlHardware.KeyPressed(SdlHardware.KEY_A) &&
             Mcharacter.GetX() <= 0)
         {
             Groom.ActualCol--;
@@ -75,7 +75,7 @@ class Game
             Mcharacter.MoveTo(Groom.MaxRight, Mcharacter.GetY());
             Steps--;
         }
-        else if (SdlHardware.KeyPressed(SdlHardware.KEY_LEFT))
+        else if (SdlHardware.KeyPressed(SdlHardware.KEY_A))
         {
             if (Groom.CanMoveTo(Mcharacter.GetX() - Mcharacter.GetSpeedX(),
                     Mcharacter.GetY(),
@@ -92,7 +92,7 @@ class Game
             }
             Mcharacter.ChangeDirection(Sprite.LEFT);
         }
-        else if (SdlHardware.KeyPressed(SdlHardware.KEY_UP) &&
+        else if (SdlHardware.KeyPressed(SdlHardware.KEY_W) &&
             Mcharacter.GetY() <= Groom.GetTopMargin())
         {
             Groom.ActualRow--;
@@ -100,7 +100,7 @@ class Game
             Mcharacter.MoveTo(Mcharacter.GetX(), Groom.MaxDown);
             Steps--;
         }
-        else if (SdlHardware.KeyPressed(SdlHardware.KEY_UP))
+        else if (SdlHardware.KeyPressed(SdlHardware.KEY_W))
         {
             if (Groom.CanMoveTo(Mcharacter.GetX(),
                     Mcharacter.GetY() - Mcharacter.GetSpeedY(),
@@ -117,7 +117,7 @@ class Game
             }
             Mcharacter.ChangeDirection(Sprite.UP);
         }
-        else if (SdlHardware.KeyPressed(SdlHardware.KEY_DOWN) &&
+        else if (SdlHardware.KeyPressed(SdlHardware.KEY_S) &&
             Mcharacter.GetY() >= Groom.MaxDown)
         {
             Groom.ActualRow++;
@@ -125,7 +125,7 @@ class Game
             Mcharacter.MoveTo(Mcharacter.GetX(), Groom.GetTopMargin());
             Steps--;
         }
-        else if (SdlHardware.KeyPressed(SdlHardware.KEY_DOWN))
+        else if (SdlHardware.KeyPressed(SdlHardware.KEY_S))
         {
             if (Groom.CanMoveTo(Mcharacter.GetX(),
                     Mcharacter.GetY() + Mcharacter.GetSpeedY(),
@@ -142,7 +142,7 @@ class Game
             }
             Mcharacter.ChangeDirection(Sprite.DOWN);
         }
-        else if (SdlHardware.KeyPressed(SdlHardware.KEY_A))
+        else if (SdlHardware.KeyPressed(SdlHardware.KEY_RETURN))
         {
             SdlHardware.Pause(100);
             foreach (Chest c in Groom.chests)

@@ -38,12 +38,12 @@ class LoadGamesScreen : Screen
             SdlHardware.ClearScreen();
             DrawMenu();
             SdlHardware.ShowHiddenScreen();
-            if (SdlHardware.KeyPressed(SdlHardware.KEY_UP) && option >
+            if (SdlHardware.KeyPressed(SdlHardware.KEY_W) && option >
                 YCURSOR_MIN)
             {
                 option--;
             }
-            else if (SdlHardware.KeyPressed(SdlHardware.KEY_DOWN) && option <
+            else if (SdlHardware.KeyPressed(SdlHardware.KEY_S) && option <
                 YCURSOR_MAX)
             {
                 option++;

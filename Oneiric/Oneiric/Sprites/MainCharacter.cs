@@ -31,6 +31,21 @@ class MainCharacter : Character
         width = 37;
         height = 47;
         Inventory = new List<Item>();
+
+        Level = 1;
+        LifeIncreaser = 25;
+        PmIncreaser = 20;
+        DamageIncreaser = 9;
+        DefenseIncreaser = 9;
+        SpeedIncreaser = 5;
+
+        MaxiumLife = LifeIncreaser * Level;
+        MaxiumPm = PmIncreaser * Level;
+        Damage = DamageIncreaser * Level;
+        Defense = DefenseIncreaser * Level;
+        Speed = SpeedIncreaser * Level;
+
+        ActualLife = MaxiumLife;
     }
 
     public List<Item> GetInventory() { return Inventory; }

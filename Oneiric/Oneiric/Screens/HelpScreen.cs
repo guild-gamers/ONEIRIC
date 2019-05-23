@@ -2,7 +2,7 @@
 
 class HelpScreen : Screen
 {
-    protected Image welcome, controls;
+    protected Image controls;
     protected Font font72, font28;
 
     public HelpScreen()

@@ -1,6 +1,6 @@
 ﻿using System;
 using Tao.Sdl;
-
+[Serializable]
 class Image
 {
     private IntPtr internalPointer;

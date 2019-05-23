@@ -1,5 +1,6 @@
 ﻿using System;
 
+[Serializable]
 class Sprite
 {
     protected int x, y;

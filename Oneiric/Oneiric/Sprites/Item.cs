@@ -1,4 +1,7 @@
-﻿class Item : Sprite
+﻿using System;
+
+[Serializable]
+class Item : Sprite
 {
     public string Name { get; set; }
     public int DamageIncreaser { get; set; }
