@@ -215,4 +215,17 @@ class Oneiric
         g.Steps = gD.steps;
         g.Time = gD.time;
     }
+
+    public static long GetTime(string file)
+    {
+        g = new Game();
+        GameData gD = new GameData();
+        IFormatter formatter = new BinaryFormatter();
+        Stream input = new FileStream(file, FileMode.Open,
+            FileAccess.Read, FileShare.Read);
+        gD = (GameData)formatter.Deserialize(input);
+        input.Close();
+
+        return gD.time;
+    }
 }

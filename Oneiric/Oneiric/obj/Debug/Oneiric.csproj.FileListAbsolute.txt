@@ -22,3 +22,11 @@ D:\Desktop\ONEIRIC\Oneiric\Oneiric\obj\Debug\Oneiric.csproj.CoreCompileInputs.ca
 D:\Desktop\ONEIRIC\Oneiric\Oneiric\obj\Debug\Oneiric.csproj.CopyComplete
 D:\Desktop\ONEIRIC\Oneiric\Oneiric\obj\Debug\Oneiric.exe
 D:\Desktop\ONEIRIC\Oneiric\Oneiric\obj\Debug\Oneiric.pdb
+C:\Users\1º_DAM\Desktop\Programación\ONEIRIC\ONEIRIC\Oneiric\obj\Debug\Oneiric.csprojAssemblyReference.cache
+C:\Users\1º_DAM\Desktop\Programación\ONEIRIC\ONEIRIC\Oneiric\obj\Debug\Oneiric.csproj.CoreCompileInputs.cache
+C:\Users\1º_DAM\Desktop\Programación\ONEIRIC\ONEIRIC\Oneiric\obj\Debug\Oneiric.exe
+C:\Users\1º_DAM\Desktop\Programación\ONEIRIC\ONEIRIC\Oneiric\obj\Debug\Oneiric.pdb
+C:\Users\1º_DAM\Desktop\Programación\ONEIRIC\ONEIRIC\Oneiric\bin\Debug\Oneiric.exe.config
+C:\Users\1º_DAM\Desktop\Programación\ONEIRIC\ONEIRIC\Oneiric\bin\Debug\Oneiric.exe
+C:\Users\1º_DAM\Desktop\Programación\ONEIRIC\ONEIRIC\Oneiric\bin\Debug\Oneiric.pdb
+C:\Users\1º_DAM\Desktop\Programación\ONEIRIC\ONEIRIC\Oneiric\obj\Debug\Oneiric.csproj.CopyComplete

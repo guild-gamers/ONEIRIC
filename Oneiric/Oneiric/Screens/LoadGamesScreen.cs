@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 
 class LoadGamesScreen : Screen
 {
     protected Image selector, realWallpaper;
     protected int option;
-    protected Font font72;
+    protected Font font72, font12;
 
     const int YCURSOR_MAX = 3;
     const int YCURSOR_MIN = 0;
@@ -18,6 +19,7 @@ class LoadGamesScreen : Screen
         selector = new Image("data/images/other/selector.png");
         realWallpaper = new Image("data/images/other/welcome.jpg");
         font72 = new Font("data/fonts/Joystix.ttf", 72);
+        font12 = new Font("data/fonts/Joystix.ttf", 12);
         texts = new Dictionary<string, string>();
     }
 
@@ -99,6 +101,32 @@ class LoadGamesScreen : Screen
             370, 265,
             0xFF, 0xFF, 0xFF,
             Font28);
+
+        if (File.Exists("data/savedGames/1_game.save"))
+        {
+            string time = CalculateTime(
+                Oneiric.GetTime("data/savedGames/1_game.save"));
+
+            SdlHardware.WriteHiddenText(texts["gt"] + time,
+                592, 302,
+                0x00, 0x00, 0x00,
+                font12);
+            SdlHardware.WriteHiddenText(texts["gt"] + time,
+                590, 300,
+                0xFF, 0xFF, 0xFF,
+                font12);
+        }
+        else
+        {
+            SdlHardware.WriteHiddenText(texts["nd"],
+                482, 267,
+                0x00, 0x00, 0x00,
+                Font28);
+            SdlHardware.WriteHiddenText(texts["nd"],
+                480, 265,
+                0xFF, 0xFF, 0xFF,
+                Font28);
+        }
         SdlHardware.WriteHiddenText("2",
            372, 387,
            0x00, 0x00, 0x00,
@@ -107,6 +135,31 @@ class LoadGamesScreen : Screen
             370, 385,
             0xFF, 0xFF, 0xFF,
             Font28);
+        if (File.Exists("data/savedGames/2_game.save"))
+        {
+            string time = CalculateTime(
+                Oneiric.GetTime("data/savedGames/2_game.save"));
+
+            SdlHardware.WriteHiddenText(texts["gt"] + time,
+                592, 422,
+                0x00, 0x00, 0x00,
+                font12);
+            SdlHardware.WriteHiddenText(texts["gt"] + time,
+                590, 420,
+                0xFF, 0xFF, 0xFF,
+                font12);
+        }
+        else
+        {
+            SdlHardware.WriteHiddenText(texts["nd"],
+                482, 387,
+                0x00, 0x00, 0x00,
+                Font28);
+            SdlHardware.WriteHiddenText(texts["nd"],
+                480, 385,
+                0xFF, 0xFF, 0xFF,
+                Font28);
+        }
         SdlHardware.WriteHiddenText("3",
            372, 497,
            0x00, 0x00, 0x00,
@@ -115,6 +168,31 @@ class LoadGamesScreen : Screen
             370, 495,
             0xFF, 0xFF, 0xFF,
             Font28);
+        if (File.Exists("data/savedGames/3_game.save"))
+        {
+            string time = CalculateTime(
+                Oneiric.GetTime("data/savedGames/3_game.save"));
+
+            SdlHardware.WriteHiddenText(texts["gt"] + time,
+                592, 532,
+                0x00, 0x00, 0x00,
+                font12);
+            SdlHardware.WriteHiddenText(texts["gt"] + time,
+                590, 530,
+                0xFF, 0xFF, 0xFF,
+                font12);
+        }
+        else
+        {
+            SdlHardware.WriteHiddenText(texts["nd"],
+                482, 497,
+                0x00, 0x00, 0x00,
+                Font28);
+            SdlHardware.WriteHiddenText(texts["nd"],
+                480, 495,
+                0xFF, 0xFF, 0xFF,
+                Font28);
+        }
         SdlHardware.WriteHiddenText(texts["bc"],
             502, 618,
             0x00, 0x00, 0x00,
@@ -125,5 +203,13 @@ class LoadGamesScreen : Screen
             Font28);
         SdlHardware.DrawHiddenImage(selector, option != YCURSOR_MAX? 235:430,
             250 + 115 * option);
+    }
+
+    public string CalculateTime(long seconds)
+    {
+        long hours = (seconds / 3600);
+        long minutes = ((seconds - hours * 3600) / 60);
+        long secs = seconds - (hours * 3600 + minutes * 60);
+        return hours.ToString() + ":" + minutes.ToString() + ":" + secs.ToString();
     }
 }
