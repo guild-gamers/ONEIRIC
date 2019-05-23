@@ -56,7 +56,10 @@ class BattleScreen : Screen
             }
             else if (SdlHardware.KeyPressed(SdlHardware.KEY_RETURN))
             {
-                SelectedOption(option);
+                if (SelectedOption(option) == 0)
+                {
+                    return 0;
+                }
             }
             SdlHardware.Pause(100);
         }
@@ -64,14 +67,28 @@ class BattleScreen : Screen
         //The loop ends when an option is choosed.
     }
 
-    public static void SelectedOption(int option)
+    public static int SelectedOption(int option)
     {
+        int rt = -1;
         switch (option)
         {
             case 0:
-                enemy.ActualLife -= Oneiric.g.Mcharacter.Damage;
+                if (enemy.ActualLife - Oneiric.g.Mcharacter.Damage <= 0)
+                {
+                    enemy.ActualLife -= Oneiric.g.Mcharacter.Damage;
+                    rt = 0;
+                }
+                else
+                {
+                    enemy.ActualLife -= Oneiric.g.Mcharacter.Damage;
+                }
+                break;
+            case 4:
+                rt = 0;
                 break;
         }
+
+        return rt;
     }
 
     public static void PrepareBattle()
