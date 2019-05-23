@@ -19,5 +19,5 @@ abstract class Character : Sprite
     public int Lucky { get; set; }
     public List<Skill> Skills { get; set; }
 
-    public Character() { }
+    public Character() {}
 }

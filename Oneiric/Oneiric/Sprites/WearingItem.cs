@@ -1,4 +1,7 @@
-﻿class WearingItem : EquipableItem
+﻿using System;
+
+[Serializable]
+class WearingItem : EquipableItem
 {
 
 }

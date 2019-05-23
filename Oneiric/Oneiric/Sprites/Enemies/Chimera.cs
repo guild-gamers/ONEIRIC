@@ -15,5 +15,7 @@
         Damage = DamageIncreaser * Level;
         Defense = DefenseIncreaser * Level;
         Speed = SpeedIncreaser * Level;
+
+        ActualLife = MaxiumLife;
     }
 }

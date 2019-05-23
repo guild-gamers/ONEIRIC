@@ -33,12 +33,12 @@
             DrawMenu(Oneiric.Languages[Oneiric.Language],
                 Oneiric.Difficultation[Oneiric.Difficulty]);
             SdlHardware.ShowHiddenScreen();
-            if (SdlHardware.KeyPressed(SdlHardware.KEY_UP) && option > 
+            if (SdlHardware.KeyPressed(SdlHardware.KEY_W) && option > 
                 YCURSOR_MIN)
             {
                 option--;
             }
-            else if (SdlHardware.KeyPressed(SdlHardware.KEY_DOWN) && option <
+            else if (SdlHardware.KeyPressed(SdlHardware.KEY_S) && option <
                 YCURSOR_MAX)
             {
                 option++;
@@ -59,7 +59,7 @@
                 ChangeOptions(-1, Oneiric.Languages.Length-1, 
                     Oneiric.Difficultation.Length-1);
             }
-            else if (SdlHardware.KeyPressed(SdlHardware.KEY_RIGHT))
+            else if (SdlHardware.KeyPressed(SdlHardware.KEY_D))
             {
                 ChangeOptions(1, Oneiric.Languages.Length - 1,
                     Oneiric.Difficultation.Length - 1);

@@ -1,3 +1,6 @@
-﻿class EquipableItem
+﻿using System;
+
+[Serializable]
+class EquipableItem
 {
 }

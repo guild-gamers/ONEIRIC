@@ -1,4 +1,7 @@
-﻿class ConsumableItem
+﻿using System;
+
+[Serializable]
+class ConsumableItem
 {
 
 }
