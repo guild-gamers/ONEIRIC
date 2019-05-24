@@ -32,7 +32,7 @@ class MainCharacter : Character
         height = 47;
         Inventory = new List<Item>();
 
-        Level = 1;
+        Level = 30;
         LifeIncreaser = 25;
         PmIncreaser = 20;
         DamageIncreaser = 9;

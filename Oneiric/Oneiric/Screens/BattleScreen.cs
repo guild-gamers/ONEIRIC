@@ -3,13 +3,15 @@ using System.Collections.Generic;
 
 class BattleScreen : Screen
 {
-    protected Image selector, menu, player;
-    protected int option;
+    protected Image selector, menu, player, historyI;
+    protected static int option;
     protected Font font72;
 
     const int YCURSOR_MAX = 4;
     const int YCURSOR_MIN = 0;
     protected static NormalEnemy enemy;
+    protected Queue<string> history;
+    protected Dictionary<string,string> battleTexts;
 
     public BattleScreen()
         : base(new Image("data/images/other/battleBackground.png"),
@@ -18,10 +20,13 @@ class BattleScreen : Screen
         option = 0;
         selector = new Image("data/images/other/selector2.png");
         menu = new Image("data/images/other/screen_battle.png");
+        historyI = new Image("data/images/other/history.png");
         player = new Image("data/images/player/Left_2.png");
         font72 = new Font("data/fonts/Joystix.ttf", 72);
         texts = new Dictionary<string, string>();
+        battleTexts = new Dictionary<string, string>();
         enemy = new NormalEnemy();
+        history = new Queue<string>();
     }
 
     public int GetChosenOption()
@@ -29,66 +34,111 @@ class BattleScreen : Screen
         return option;
     }
 
-    public int Run()
+    public void Run()
     {
-        option = 0;
-        LoadText(Oneiric.Languages[Oneiric.Language], "battleMenu");
+        bool endBattle = false;
+        LoadText(Oneiric.Languages[Oneiric.Language], "battleTexts");
+        
         SdlHardware.Pause(100);
         PrepareBattle();
         do
         {
-            SdlHardware.ClearScreen();
-            DrawMenu();
-            SdlHardware.ShowHiddenScreen();
-            if (SdlHardware.KeyPressed(SdlHardware.KEY_W) && option >
-                YCURSOR_MIN)
+            bool endPlayerTurn = false;
+            do
+            { 
+                PlayerTurn(ref endBattle, ref endPlayerTurn);
+                UpdateScreen();
+                SdlHardware.Pause(100);
+            } while (!endPlayerTurn);
+
+            SdlHardware.Pause(500);
+            if (!endBattle)
             {
-                option--;
+                EnemyTurn(ref endBattle);
+                UpdateScreen();
+                SdlHardware.Pause(100);
             }
-            else if (SdlHardware.KeyPressed(SdlHardware.KEY_S) && option <
-                YCURSOR_MAX)
-            {
-                option++;
-            }
-            else if (SdlHardware.KeyPressed(SdlHardware.KEY_ESC))
-            {
-                option = YCURSOR_MAX;
-            }
-            else if (SdlHardware.KeyPressed(SdlHardware.KEY_RETURN))
-            {
-                if (SelectedOption(option) == 0)
-                {
-                    return 0;
-                }
-            }
-            SdlHardware.Pause(100);
         }
-        while (true);
-        //The loop ends when an option is choosed.
+        while (!endBattle);
+        
     }
 
-    public static int SelectedOption(int option)
+    public void UpdateScreen() {
+        SdlHardware.ClearScreen();
+        DrawMenu();
+        ShowHistory();
+        SdlHardware.ShowHiddenScreen();
+    }
+
+    public void PlayerTurn(ref bool endBattle, ref bool endPlayerTurn)
     {
-        int rt = -1;
+        if (SdlHardware.KeyPressed(SdlHardware.KEY_W) && option >
+                YCURSOR_MIN)
+        {
+            option--;
+        }
+        else if (SdlHardware.KeyPressed(SdlHardware.KEY_S) && option <
+            YCURSOR_MAX)
+        {
+            option++;
+        }
+        else if (SdlHardware.KeyPressed(SdlHardware.KEY_ESC))
+        {
+            option = YCURSOR_MAX;
+        }
+        else if (SdlHardware.KeyPressed(SdlHardware.KEY_RETURN))
+        {
+            SelectedOption(ref endBattle);
+            endPlayerTurn = true;
+        }
+    }
+
+    public void EnemyTurn(ref bool endBattle)
+    {
+        enemy.Attack(Oneiric.g.Mcharacter);
+        history.Enqueue(enemy.GetType() + " " + texts["aa"] +
+                    " Jugador");
+        if (Oneiric.g.Mcharacter.ActualLife == 0)
+        {
+            endBattle = true;
+            Console.WriteLine("Has muerto");
+        }
+    }
+
+    public void SelectedOption(ref bool endBattle)
+    {
         switch (option)
         {
             case 0:
-                if (enemy.ActualLife - Oneiric.g.Mcharacter.Damage <= 0)
-                {
-                    enemy.ActualLife -= Oneiric.g.Mcharacter.Damage;
-                    rt = 0;
-                }
-                else
-                {
-                    enemy.ActualLife -= Oneiric.g.Mcharacter.Damage;
-                }
+                Oneiric.g.Mcharacter.Attack(enemy);
+                history.Enqueue("Jugador " + texts["aa"] + 
+                    " " + enemy.GetType());
+                if (enemy.ActualLife == 0)
+                    endBattle = true;
                 break;
             case 4:
-                rt = 0;
+                if (Game.rand.Next(0,1)+1 == 1)
+                {
+                    endBattle = true;
+                }
                 break;
         }
+    }
 
-        return rt;
+    public void ShowHistory() {
+        short posX = 30;
+        short posY = 725;
+        foreach (string s in history) {
+            SdlHardware.WriteHiddenText(s,
+                (short)(posX+2), (short)(posY+2),
+                0x00, 0x00, 0x00,
+                Font28);
+            SdlHardware.WriteHiddenText(s,
+                posX, posY,
+                0xFF, 0xFF, 0xFF,
+                Font28);
+            posY -= 20;
+        }
     }
 
     public static void PrepareBattle()
@@ -156,6 +206,7 @@ class BattleScreen : Screen
     {
         SdlHardware.DrawHiddenImage(Wallpaper, 0, 0);
         SdlHardware.DrawHiddenImage(menu, 650, 500);
+        SdlHardware.DrawHiddenImage(historyI, 20, 425);
         SdlHardware.WriteHiddenText(texts["at"],
             682, 522,
             0x00, 0x00, 0x00,
@@ -209,12 +260,12 @@ class BattleScreen : Screen
             Font28);
         SdlHardware.WriteHiddenText(Convert.ToString(
             enemy.ActualLife),
-           200, 500,
+           200, 375,
            0x00, 0x00, 0x00,
            Font28);
         SdlHardware.WriteHiddenText(Convert.ToString(
             enemy.ActualLife),
-            200, 500,
+            200, 375,
             0xFF, 0xFF, 0xFF,
             Font28);
         SdlHardware.DrawHiddenImage(player, 900,200);

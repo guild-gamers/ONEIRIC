@@ -2,7 +2,7 @@
 {
     public Brigthrooster()
     {
-        LoadImage("data/images/enemies/normal/birghtrooster.png");
+        LoadImage("data/images/enemies/normal/brightrooster.png");
 
         LifeIncreaser = 21;
         PmIncreaser = 17;

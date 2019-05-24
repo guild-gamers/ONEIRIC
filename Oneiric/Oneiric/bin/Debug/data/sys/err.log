@@ -48,3 +48,31 @@
 >>>>>>> master
 23/05/2019 20:46:00 → Image not found: data/images/enemies/normal/birghtrooster.png
 23/05/2019 20:51:33 → Image not found: data/images/enemies/normal/birghtrooster.png
+24/05/2019 17:38:45 → File Not Found
+24/05/2019 17:39:56 → IO Error: System.IO.DirectoryNotFoundException: No se puede encontrar una parte de la ruta de acceso 'D:\Desktop\ONEIRIC\Oneiric\Oneiric\bin\Debug\data\langs\es\battle\battleTexts.dat'.
+   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   en System.IO.StreamReader..ctor(String path)
+   en System.IO.File.OpenText(String path)
+   en Screen.LoadText(String language, String fileName) en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Screens\Screen.cs:línea 24
+24/05/2019 17:39:57 → Image not found: data/images/enemies/normal/birghtrooster.png
+24/05/2019 17:40:11 → IO Error: System.IO.DirectoryNotFoundException: No se puede encontrar una parte de la ruta de acceso 'D:\Desktop\ONEIRIC\Oneiric\Oneiric\bin\Debug\data\langs\es\battle\battleTexts.dat'.
+   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   en System.IO.StreamReader..ctor(String path)
+   en System.IO.File.OpenText(String path)
+   en Screen.LoadText(String language, String fileName) en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Screens\Screen.cs:línea 24
+24/05/2019 17:40:11 → Image not found: data/images/enemies/normal/birghtrooster.png
+24/05/2019 17:40:18 → IO Error: System.IO.DirectoryNotFoundException: No se puede encontrar una parte de la ruta de acceso 'D:\Desktop\ONEIRIC\Oneiric\Oneiric\bin\Debug\data\langs\es\battle\battleTexts.dat'.
+   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   en System.IO.StreamReader..ctor(String path)
+   en System.IO.File.OpenText(String path)
+   en Screen.LoadText(String language, String fileName) en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Screens\Screen.cs:línea 24
+24/05/2019 18:03:20 → Image not found: data/images/enemies/normal/birghtrooster.png
