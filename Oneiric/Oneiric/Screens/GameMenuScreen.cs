@@ -215,12 +215,12 @@ class GameMenuScreen : Screen
             SdlHardware.DrawHiddenImage(saveBackground, -100, 0);
             SdlHardware.DrawHiddenImage(selector, 200, 270 + 120 * optionSave);
             SdlHardware.ShowHiddenScreen();
-            if (SdlHardware.KeyPressed(SdlHardware.KEY_UP) && optionSave >
+            if (SdlHardware.KeyPressed(SdlHardware.KEY_W) && optionSave >
                  YSECONDCURSOR_MIN)
             {
                 optionSave--;
             }
-            else if (SdlHardware.KeyPressed(SdlHardware.KEY_DOWN) && optionSave <
+            else if (SdlHardware.KeyPressed(SdlHardware.KEY_S) && optionSave <
                 YSECONDCURSOR_MAX)
             {
                 optionSave++;

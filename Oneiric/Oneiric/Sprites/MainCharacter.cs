@@ -5,6 +5,7 @@ class MainCharacter : Character
 {
     public List<Item> Inventory { get; set; }
     public List<Weapon> Weapons { get; set; }
+    public string Name { get; }
 
     public MainCharacter()
     {
@@ -31,8 +32,8 @@ class MainCharacter : Character
         width = 37;
         height = 47;
         Inventory = new List<Item>();
-
-        Level = 30;
+        Name = "Coco";
+        Level = 10;
         LifeIncreaser = 25;
         PmIncreaser = 20;
         DamageIncreaser = 9;

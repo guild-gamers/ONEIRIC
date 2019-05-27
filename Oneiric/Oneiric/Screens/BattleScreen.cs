@@ -5,7 +5,7 @@ class BattleScreen : Screen
 {
     protected Image selector, menu, player, historyI;
     protected static int option;
-    protected Font font72;
+    protected Font font72, font16;
 
     const int YCURSOR_MAX = 4;
     const int YCURSOR_MIN = 0;
@@ -23,10 +23,15 @@ class BattleScreen : Screen
         historyI = new Image("data/images/other/history.png");
         player = new Image("data/images/player/Left_2.png");
         font72 = new Font("data/fonts/Joystix.ttf", 72);
+        font16 = new Font("data/fonts/Joystix.ttf", 16);
         texts = new Dictionary<string, string>();
         battleTexts = new Dictionary<string, string>();
         enemy = new NormalEnemy();
         history = new Queue<string>();
+        for (int i = 0; i < 15; i++)
+        {
+            history.Enqueue(" ");
+        }
     }
 
     public int GetChosenOption()
@@ -95,13 +100,15 @@ class BattleScreen : Screen
 
     public void EnemyTurn(ref bool endBattle)
     {
-        enemy.Attack(Oneiric.g.Mcharacter);
-        history.Enqueue(enemy.GetType() + " " + texts["aa"] +
+        WriteOnHistory(enemy.GetType() + texts["aa"] +
                     " Jugador");
+        string damage = enemy.Attack(Oneiric.g.Mcharacter);
+        WriteOnHistory(enemy.GetType() + texts["in"] +
+                    " " + damage +  texts["dm"]);
         if (Oneiric.g.Mcharacter.ActualLife == 0)
         {
+            WriteOnHistory(texts["yd"]);
             endBattle = true;
-            Console.WriteLine("Has muerto");
         }
     }
 
@@ -110,11 +117,23 @@ class BattleScreen : Screen
         switch (option)
         {
             case 0:
-                Oneiric.g.Mcharacter.Attack(enemy);
-                history.Enqueue("Jugador " + texts["aa"] + 
+                WriteOnHistory(Oneiric.g.Mcharacter.Name + texts["aa"] + 
                     " " + enemy.GetType());
+                string damage = Oneiric.g.Mcharacter.Attack(enemy);
+                WriteOnHistory(Oneiric.g.Mcharacter.Name + texts["in"] +
+                    " " + damage + texts["dm"]);
                 if (enemy.ActualLife == 0)
+                {
+                    WriteOnHistory(enemy.GetType() + texts["de"]);
+                    WriteOnHistory(Oneiric.g.Mcharacter.Name + texts["wn"]);
+                    /*Item i = enemy.DropItem();
+                    if (i != null)
+                    {
+                        Oneiric.g.Mcharacter.AddItem(i);
+                        WriteOnHistory(texts["yg"] + " " + i.Name);
+                    }*/
                     endBattle = true;
+                }
                 break;
             case 4:
                 if (Game.rand.Next(0,1)+1 == 1)
@@ -127,18 +146,26 @@ class BattleScreen : Screen
 
     public void ShowHistory() {
         short posX = 30;
-        short posY = 725;
+        short posY = 450;
         foreach (string s in history) {
             SdlHardware.WriteHiddenText(s,
                 (short)(posX+2), (short)(posY+2),
                 0x00, 0x00, 0x00,
-                Font28);
+                font16);
             SdlHardware.WriteHiddenText(s,
                 posX, posY,
                 0xFF, 0xFF, 0xFF,
-                Font28);
-            posY -= 20;
+                font16);
+            posY += 20;
         }
+    }
+
+    public void WriteOnHistory(string s)
+    {
+        history.Enqueue(s);
+        history.Dequeue();
+        UpdateScreen();
+        SdlHardware.Pause(1000);
     }
 
     public static void PrepareBattle()

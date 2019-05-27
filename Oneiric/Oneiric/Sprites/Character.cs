@@ -21,10 +21,12 @@ abstract class Character : Sprite
 
     public Character() {}
 
-    public void Attack(Character focus) {
-        focus.ActualLife -= Damage + 
+    public string Attack(Character focus) {
+        int damage = Damage + 
             ((Damage/2) * Game.rand.Next(0, Lucky) + 1);
+        focus.ActualLife -= damage;
         if (focus.ActualLife < 0)
             focus.ActualLife = 0;
+        return damage.ToString();
     }
 }

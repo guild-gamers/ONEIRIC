@@ -5,6 +5,7 @@ pt; Defender
 rn; Huír
 aa; ataca a
 in; inflige
+dm; dano
 ap; se ha protegido
 lp; PV
 mp; PM
@@ -12,3 +13,5 @@ us; usó
 wn; ha ganado la batalla
 de; ha muerto
 cs; Es un golpe crítico
+yd;Has muerto
+yg;Obtienes

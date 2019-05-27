@@ -23,7 +23,9 @@ class Chest : InteractibleElement
         {
             try
             {
-                StreamReader file = File.OpenText("data/sys/items.dat");
+                StreamReader file = File.OpenText("data/langs/"+
+                    Oneiric.Languages[Oneiric.Language].Substring(
+                        0, 2).ToLower() + "/items.dat");
                 string line = "";
 
                 do
@@ -38,9 +40,29 @@ class Chest : InteractibleElement
                         {
                             if (Game.rand.Next(0, 4) == 1)
                             {
-                                items.Add(new Item(data[0], Convert.ToInt32(data[1]),
-                                    Convert.ToInt32(data[2]), Convert.ToInt32(data[3]),
-                                    Convert.ToInt32(data[4]), Convert.ToInt32(data[5])));
+                                if (data[0] == "c")
+                                {
+                                    items.Add(new ConsumableItem(data[1], Convert.ToInt32(data[2]),
+                                       Convert.ToInt32(data[3]), Convert.ToInt32(data[4]),
+                                       Convert.ToInt32(data[5]), Convert.ToInt32(data[6]),
+                                       Convert.ToInt32(data[7]), Convert.ToInt32(data[8]),
+                                       Convert.ToInt32(data[9])));
+                                }
+                                else if (data[0] == "e")
+                                {
+                                    items.Add(new EquipableItem(data[1], Convert.ToInt32(data[2]),
+                                       Convert.ToInt32(data[3]), Convert.ToInt32(data[4]),
+                                       Convert.ToInt32(data[5]), Convert.ToInt32(data[6]),
+                                       Convert.ToInt32(data[7]), Convert.ToInt32(data[8])));
+                                }
+                                else
+                                {
+                                    items.Add(new Item(data[1], Convert.ToInt32(data[2]),
+                                       Convert.ToInt32(data[3]), Convert.ToInt32(data[4]),
+                                       Convert.ToInt32(data[5]), Convert.ToInt32(data[6]),
+                                       Convert.ToInt32(data[7]), Convert.ToInt32(data[8])));
+                                }
+                                
                             }
                         }
                     }
