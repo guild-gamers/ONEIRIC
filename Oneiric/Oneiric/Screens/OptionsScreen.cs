@@ -51,10 +51,11 @@
             {
                 if (option == YCURSOR_MAX)
                 {
+                    Oneiric.LoadItemsName();
                     return option;
                 }
             }
-            else if(SdlHardware.KeyPressed(SdlHardware.KEY_LEFT))
+            else if(SdlHardware.KeyPressed(SdlHardware.KEY_A))
             {
                 ChangeOptions(-1, Oneiric.Languages.Length-1, 
                     Oneiric.Difficultation.Length-1);

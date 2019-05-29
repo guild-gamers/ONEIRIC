@@ -10,4 +10,10 @@ class ConsumableItem : Item
     {
         Heal = heal;
     }
+
+    public override void Use()
+    {
+        Oneiric.g.Mcharacter.Heal(Heal);
+        base.Use();
+    }
 }

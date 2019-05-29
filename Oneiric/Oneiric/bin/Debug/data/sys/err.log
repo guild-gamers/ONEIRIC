@@ -1,271 +1,1616 @@
-﻿16/05/2019 20:37:33 → Can't load the game. File Not Found.
-16/05/2019 20:40:09 → Can't load the game. File Not Found.
-16/05/2019 20:40:37 → Can't load the game. File Not Found.
-16/05/2019 20:40:44 → Can't load the game. File Not Found.
-16/05/2019 20:41:31 → Can't load the game. File Not Found.
-16/05/2019 20:41:32 → Can't load the game. File Not Found.
-16/05/2019 20:41:33 → Can't load the game. File Not Found.
-16/05/2019 20:41:33 → Can't load the game. File Not Found.
-16/05/2019 20:41:33 → Can't load the game. File Not Found.
-16/05/2019 20:41:33 → Can't load the game. File Not Found.
-16/05/2019 20:41:34 → Can't load the game. File Not Found.
-16/05/2019 20:42:32 → Can't load the game. File Not Found data/savedGames/1_game.save.
-16/05/2019 20:42:32 → Can't load the game. File Not Found data/savedGames/1_game.save.
-16/05/2019 20:42:32 → Can't load the game. File Not Found data/savedGames/1_game.save.
-16/05/2019 20:42:32 → Can't load the game. File Not Found data/savedGames/1_game.save.
-16/05/2019 20:42:32 → Can't load the game. File Not Found data/savedGames/1_game.save.
-16/05/2019 20:42:33 → Can't load the game. File Not Found data/savedGames/1_game.save.
-17/05/2019 15:25:59 → Image not found: data/images/other/welcome.jpg
-17/05/2019 15:25:59 → Image not found: data/images/other/welcome.jpg
-17/05/2019 15:25:59 → Image not found: data/images/other/welcome.jpg
-17/05/2019 15:26:38 → Image not found: data/images/other/welcome.jpg
-17/05/2019 15:44:32 → Can't load the game. File Not Found data/savedGames/1_game.save
-17/05/2019 15:44:32 → Can't load the game. File Not Found data/savedGames/1_game.save
-17/05/2019 15:44:33 → Can't load the game. File Not Found data/savedGames/1_game.save
-17/05/2019 15:44:33 → Can't load the game. File Not Found data/savedGames/1_game.save
-17/05/2019 15:44:35 → Can't load the game. File Not Found data/savedGames/2_game.save
-17/05/2019 15:45:07 → Can't load the game. File Not Found data/savedGames/1_game.save
-17/05/2019 15:45:08 → Can't load the game. File Not Found data/savedGames/1_game.save
-17/05/2019 15:45:10 → Can't load the game. File Not Found data/savedGames/1_game.save
-17/05/2019 15:45:10 → Can't load the game. File Not Found data/savedGames/1_game.save
-17/05/2019 15:45:10 → Can't load the game. File Not Found data/savedGames/1_game.save
-17/05/2019 15:45:11 → Can't load the game. File Not Found data/savedGames/1_game.save
-17/05/2019 15:45:11 → Can't load the game. File Not Found data/savedGames/1_game.save
-17/05/2019 15:45:11 → Can't load the game. File Not Found data/savedGames/1_game.save
-22/05/2019 20:10:17 → Image not found: data/images/other/welcome.png
-22/05/2019 20:32:11 → Can't load the game. File Not Found data/savedGames/3_game.save
-<<<<<<< HEAD
-23/05/2019 19:56:21 → Image not found: data/images/map/floor1.jpg
-23/05/2019 20:12:50 → Image not found: data/images/map/floor1.jpg
-23/05/2019 20:13:16 → Image not found: data/images/map/floor1.jpg
-23/05/2019 20:13:50 → Image not found: data/images/map/floor1.jpg
-23/05/2019 20:15:58 → Image not found: data/images/map/floor1.jpg
-23/05/2019 20:16:56 → Image not found: data/images/map/floor1.jpg
-23/05/2019 20:18:48 → Can't load the game. File Not Found data/savedGames/3_game.save
-=======
-23/05/2019 20:01:36 → Can't load the game. File Not Found data/savedGames/3_game.save
-23/05/2019 20:23:12 → Can't load the game. File Not Found data/savedGames/1_game.save
->>>>>>> master
-23/05/2019 20:46:00 → Image not found: data/images/enemies/normal/birghtrooster.png
-23/05/2019 20:51:33 → Image not found: data/images/enemies/normal/birghtrooster.png
-24/05/2019 17:38:45 → File Not Found
-24/05/2019 17:39:56 → IO Error: System.IO.DirectoryNotFoundException: No se puede encontrar una parte de la ruta de acceso 'D:\Desktop\ONEIRIC\Oneiric\Oneiric\bin\Debug\data\langs\es\battle\battleTexts.dat'.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Screen.LoadText(String language, String fileName) en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Screens\Screen.cs:línea 24
-24/05/2019 17:39:57 → Image not found: data/images/enemies/normal/birghtrooster.png
-24/05/2019 17:40:11 → IO Error: System.IO.DirectoryNotFoundException: No se puede encontrar una parte de la ruta de acceso 'D:\Desktop\ONEIRIC\Oneiric\Oneiric\bin\Debug\data\langs\es\battle\battleTexts.dat'.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Screen.LoadText(String language, String fileName) en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Screens\Screen.cs:línea 24
-24/05/2019 17:40:11 → Image not found: data/images/enemies/normal/birghtrooster.png
-24/05/2019 17:40:18 → IO Error: System.IO.DirectoryNotFoundException: No se puede encontrar una parte de la ruta de acceso 'D:\Desktop\ONEIRIC\Oneiric\Oneiric\bin\Debug\data\langs\es\battle\battleTexts.dat'.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Screen.LoadText(String language, String fileName) en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Screens\Screen.cs:línea 24
-24/05/2019 18:03:20 → Image not found: data/images/enemies/normal/birghtrooster.png
-27/05/2019 19:27:18 → Can't load the game. File Not Found data/savedGames/2_game.save
-27/05/2019 20:46:08 → IO Error: System.IO.IOException: El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Enemy.LoadItems() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Sprites\Enemy.cs:línea 26
-27/05/2019 20:46:09 → IO Error: System.IO.IOException: El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Enemy.LoadItems() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Sprites\Enemy.cs:línea 26
-27/05/2019 20:47:47 → IO Error: System.IO.IOException: El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Enemy.LoadItems() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Sprites\Enemy.cs:línea 26
-27/05/2019 20:47:47 → IO Error: System.IO.IOException: El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Enemy.LoadItems() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Sprites\Enemy.cs:línea 26
-27/05/2019 20:48:41 → IO Error: System.IO.IOException: El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Enemy.LoadItems() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Sprites\Enemy.cs:línea 27
-27/05/2019 20:48:41 → IO Error: System.IO.IOException: El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Enemy.LoadItems() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Sprites\Enemy.cs:línea 27
-27/05/2019 20:49:13 → IO Error: System.IO.IOException: El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Enemy.LoadItems() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Sprites\Enemy.cs:línea 27
-27/05/2019 20:49:13 → IO Error: System.IO.IOException: El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Enemy.LoadItems() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Sprites\Enemy.cs:línea 27
-27/05/2019 20:49:52 → IO Error: System.IO.IOException: El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Enemy.LoadItems() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Sprites\Enemy.cs:línea 27
-27/05/2019 20:49:52 → IO Error: System.IO.IOException: El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Enemy.LoadItems() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Sprites\Enemy.cs:línea 27
-27/05/2019 20:50:23 → IO Error: System.IO.IOException: El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Enemy.LoadItems() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Sprites\Enemy.cs:línea 27
-27/05/2019 20:50:23 → IO Error: System.IO.IOException: El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Enemy.LoadItems() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Sprites\Enemy.cs:línea 27
-27/05/2019 20:50:55 → IO Error: System.IO.IOException: El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Enemy.LoadItems() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Sprites\Enemy.cs:línea 27
-27/05/2019 20:50:55 → IO Error: System.IO.IOException: El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Enemy.LoadItems() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Sprites\Enemy.cs:línea 27
-27/05/2019 20:52:03 → IO Error: System.IO.IOException: El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Enemy.LoadItems() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Sprites\Enemy.cs:línea 27
-27/05/2019 20:52:03 → IO Error: System.IO.IOException: El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Enemy.LoadItems() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Sprites\Enemy.cs:línea 27
-27/05/2019 20:52:31 → IO Error: System.IO.IOException: El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Enemy.LoadItems() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Sprites\Enemy.cs:línea 27
-27/05/2019 20:52:31 → IO Error: System.IO.IOException: El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Enemy.LoadItems() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Sprites\Enemy.cs:línea 27
-27/05/2019 20:52:51 → IO Error: System.IO.IOException: El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Enemy.LoadItems() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Sprites\Enemy.cs:línea 27
-27/05/2019 20:52:51 → IO Error: System.IO.IOException: El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Enemy.LoadItems() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Sprites\Enemy.cs:línea 27
-27/05/2019 20:53:04 → IO Error: System.IO.IOException: El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Enemy.LoadItems() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Sprites\Enemy.cs:línea 27
-27/05/2019 20:53:04 → IO Error: System.IO.IOException: El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Enemy.LoadItems() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Sprites\Enemy.cs:línea 27
-27/05/2019 20:54:01 → IO Error: System.IO.IOException: El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Enemy.LoadItems() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Sprites\Enemy.cs:línea 27
-27/05/2019 20:54:01 → IO Error: System.IO.IOException: El nombre de archivo, el nombre de directorio o la sintaxis de la etiqueta del volumen no son correctos.
-   en System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
-   en System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
-   en System.IO.StreamReader..ctor(String path)
-   en System.IO.File.OpenText(String path)
-   en Enemy.LoadItems() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Sprites\Enemy.cs:línea 27
+﻿29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:38 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:39 → File Not Found
+29/05/2019 18:13:40 → File Not Found
+29/05/2019 18:13:40 → File Not Found
+29/05/2019 18:13:40 → File Not Found
+29/05/2019 18:13:40 → File Not Found
+29/05/2019 18:13:40 → File Not Found
+29/05/2019 18:13:40 → File Not Found
+29/05/2019 18:13:40 → File Not Found
+29/05/2019 18:13:40 → File Not Found
+29/05/2019 18:13:40 → File Not Found
+29/05/2019 18:13:40 → File Not Found
+29/05/2019 18:36:54 → File Not Found
+29/05/2019 18:41:20 → File Not Found
+29/05/2019 18:42:58 → File Not Found
+29/05/2019 19:17:48 → Error: System.ArgumentException: Ya se agregó un elemento con la misma clave.
+   en System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   en System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   en System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   en Oneiric.LoadItemsName() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Oneiric.cs:línea 253
+29/05/2019 19:20:27 → Error: System.ArgumentException: Ya se agregó un elemento con la misma clave.
+   en System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   en System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   en System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   en Oneiric.LoadItemsName() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Oneiric.cs:línea 252
+29/05/2019 20:43:40 → File Not Found

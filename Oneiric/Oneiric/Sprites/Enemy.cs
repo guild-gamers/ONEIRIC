@@ -26,7 +26,7 @@ abstract class Enemy : Character
         {
             StreamReader file = File.OpenText("data/langs/" +
                 Oneiric.Languages[Oneiric.Language].Substring(
-                    0, 2).ToLower() + "/items.dat/");
+                    0, 2).ToLower() + "/items.dat");
 
             string line = "";
 
@@ -59,9 +59,9 @@ abstract class Enemy : Character
                             Convert.ToInt32(data[5]), Convert.ToInt32(data[6]),
                             Convert.ToInt32(data[7]), Convert.ToInt32(data[8])));
                     }
+
                 }
             } while (line != null);
-            file.Close();
         }
         catch (PathTooLongException)
         {

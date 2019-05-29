@@ -31,7 +31,7 @@ class LoadGamesScreen : Screen
     public int Run()
     {
         option = 0;
-        LoadText(Oneiric.Languages[Oneiric.Language],"loadSaveMenu");
+        LoadText(Oneiric.Languages[Oneiric.Language], "loadSaveMenu");
         SdlHardware.Pause(100);
         do
         {

@@ -26,7 +26,6 @@ class BattleScreen : Screen
         font16 = new Font("data/fonts/Joystix.ttf", 16);
         texts = new Dictionary<string, string>();
         battleTexts = new Dictionary<string, string>();
-        enemy = new NormalEnemy();
         history = new Queue<string>();
         for (int i = 0; i < 15; i++)
         {
@@ -126,12 +125,12 @@ class BattleScreen : Screen
                 {
                     WriteOnHistory(enemy.GetType() + texts["de"]);
                     WriteOnHistory(Oneiric.g.Mcharacter.Name + texts["wn"]);
-                    /*Item i = enemy.DropItem();
+                    Item i = enemy.DropItem();
                     if (i != null)
                     {
                         Oneiric.g.Mcharacter.AddItem(i);
                         WriteOnHistory(texts["yg"] + " " + i.Name);
-                    }*/
+                    }
                     endBattle = true;
                 }
                 break;
@@ -172,7 +171,6 @@ class BattleScreen : Screen
     {
         RandomEnemy(Game.rand.Next(0,15)+1);
         enemy.MoveTo(100,100);
-        
     }
 
     public static NormalEnemy RandomEnemy(int random)

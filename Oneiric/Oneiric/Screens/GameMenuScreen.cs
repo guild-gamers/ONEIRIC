@@ -69,6 +69,7 @@ class GameMenuScreen : Screen
                 value = 0;
                 break;
             case 1:
+                ShowInventory();
                 value = 1;
                 break;
             case 2:
@@ -92,6 +93,69 @@ class GameMenuScreen : Screen
         }
 
         return value;
+    }
+
+    public void ShowInventory()
+    {
+        int selected = 0;
+        List<string> drawItems = new List<string>();
+
+        foreach (KeyValuePair<Item, byte> i in
+                Oneiric.g.Mcharacter.GetInventory())
+        {
+            drawItems.Add(Oneiric.ItemsName[i.Key.Name.Substring(0, 2)]
+                + " x" + i.Value);
+        }
+
+        do
+        {
+            short posX = 200;
+            short posY = 230;
+
+            int index = selected - 10;
+            index = index < 0 ? 0:index;
+
+            SdlHardware.DrawHiddenImage(greyBackground, 0, 0);
+            SdlHardware.DrawHiddenImage(selector, 160, 232 + 30 * selected);
+            for (int i = 0; i < 10 && i < drawItems.Count-1; i++)
+            {
+                SdlHardware.WriteHiddenText(drawItems[index],
+                        (short)(posX + 2), (short)(posY + 2),
+                        0x00, 0x00, 0x00,
+                        Font28);
+                SdlHardware.WriteHiddenText(drawItems[index],
+                    posX, posY,
+                    0xFF, 0xFF, 0xFF,
+                    Font28);
+                posY += 30;
+                index++;
+            }
+
+            int minSelected = selected - 10;
+            minSelected = minSelected < 10 ? 0 : minSelected;
+            int maxSelected = minSelected + 10;
+            maxSelected = minSelected < 10 ? index-1 : maxSelected;
+            
+            SdlHardware.ShowHiddenScreen();
+            if (SdlHardware.KeyPressed(SdlHardware.KEY_W) && selected >
+                 minSelected)
+            {
+                selected--;
+            }
+            else if (SdlHardware.KeyPressed(SdlHardware.KEY_S) && selected <
+                maxSelected)
+            {
+                selected++;
+            }
+            else if (SdlHardware.KeyPressed(SdlHardware.KEY_RETURN))
+            {
+                Oneiric.g.Mcharacter.UseItem(drawItems[selected]);
+            }
+            SdlHardware.Pause(100);
+            SdlHardware.ShowHiddenScreen();
+
+        } while (!SdlHardware.KeyPressed(SdlHardware.KEY_ESC));
+        
     }
 
     public string SelectedOption()
@@ -231,6 +295,5 @@ class GameMenuScreen : Screen
             }
             SdlHardware.Pause(100);
         } while (!SdlHardware.KeyPressed(SdlHardware.KEY_ESC));
-
     }
 }

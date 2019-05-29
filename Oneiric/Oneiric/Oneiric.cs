@@ -37,7 +37,7 @@ class Oneiric
         public int speedPlayer;
         public int lucky;
         public List<Skill> skills;
-        public List<Item> inventory;
+        public Dictionary<Item,byte> inventory;
         public List<Weapon> weapons;
         public byte actualColMap;
         public byte actualRowMap;
@@ -45,6 +45,7 @@ class Oneiric
         public long time;
     }
 
+    public static Dictionary<string, string> ItemsName;
     public static byte Language { get; set; }
     public static byte Difficulty { get; set; }
     public static byte MAX_VOLUME = 10;
@@ -79,6 +80,8 @@ class Oneiric
             Difficulty = 1;
             Volume = 10;
         }
+        ItemsName = new Dictionary<string, string>();
+        LoadItemsName();
     }
 
     static void Main()
@@ -176,6 +179,7 @@ class Oneiric
         Stream output = new FileStream(file, FileMode.Create,
             FileAccess.Write, FileShare.None);
         formatter.Serialize(output, op);
+
         output.Close();
     }
 
@@ -227,5 +231,45 @@ class Oneiric
         input.Close();
 
         return gD.time;
+    }
+
+    public static void LoadItemsName()
+    {
+        ItemsName.Clear();
+        try
+        {
+            StreamReader file = File.OpenText("data/langs/" +
+                Languages[Language].Substring(0, 2).ToLower() +
+                "/systemText/items_name.dat");
+
+            string line;
+
+            do
+            {
+                line = file.ReadLine();
+
+                if (line != null)
+                {
+                    ItemsName.Add((line.Split(';'))[0], (line.Split(';'))[1]);
+                }
+            } while (line != null);
+            file.Close();
+        }
+        catch (PathTooLongException)
+        {
+            SaveLog("Path too long Error");
+        }
+        catch (FileNotFoundException)
+        {
+            SaveLog("File Not Found");
+        }
+        catch (IOException e)
+        {
+            SaveLog("IO Error: " + e);
+        }
+        catch (Exception e)
+        {
+            SaveLog("Error: " + e);
+        }
     }
 }

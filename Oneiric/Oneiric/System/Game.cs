@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 class Game
 {
@@ -151,11 +152,6 @@ class Game
                 {
                     c.Interactue(Mcharacter);
                 }
-            }
-            Console.Clear();
-            foreach (Item i in Mcharacter.GetInventory())
-            {
-                Console.WriteLine(i.Name);
             }
         }
 

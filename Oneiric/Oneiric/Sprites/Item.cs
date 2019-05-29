@@ -24,4 +24,24 @@ class Item : Sprite
         LuckyIncreaser = luI;
         Rarity = rarity;
     }
+
+    public override bool Equals(Object obj)
+    {
+        Item i = (Item)obj;
+        return i.Name.Equals(Name);
+    }
+
+    public override int GetHashCode()
+    {
+        return Name.GetHashCode();
+    }
+
+    public virtual void Use() {
+        Oneiric.g.Mcharacter.MaxiumLife += LifeIncreaser;
+        Oneiric.g.Mcharacter.MaxiumPm += PmIncreaser;
+        Oneiric.g.Mcharacter.Damage += DamageIncreaser;
+        Oneiric.g.Mcharacter.Defense += DefenseIncreaser;
+        Oneiric.g.Mcharacter.Speed += SpeedIncreaser;
+        Oneiric.g.Mcharacter.Lucky += LuckyIncreaser;
+    }
 }

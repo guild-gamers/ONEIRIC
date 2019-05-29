@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 class MainCharacter : Character
 {
-    public List<Item> Inventory { get; set; }
+    public Dictionary<Item,byte> Inventory { get; set; }
     public List<Weapon> Weapons { get; set; }
     public string Name { get; }
 
@@ -31,7 +31,7 @@ class MainCharacter : Character
         xSpeed = ySpeed = 8;
         width = 37;
         height = 47;
-        Inventory = new List<Item>();
+        Inventory = new Dictionary<Item, byte>();
         Name = "Coco";
         Level = 10;
         LifeIncreaser = 25;
@@ -49,7 +49,7 @@ class MainCharacter : Character
         ActualLife = MaxiumLife;
     }
 
-    public List<Item> GetInventory() { return Inventory; }
+    public Dictionary<Item,byte> GetInventory() { return Inventory; }
 
     public void MoveRight()
     {
@@ -75,8 +75,56 @@ class MainCharacter : Character
         NextFrame();
     }
 
-    public void AddItem(Item i)
+    public bool AddItem(Item i)
     {
-        Inventory.Add(i);
+        bool added = false;
+        if (Inventory.ContainsKey(i))
+        {
+            if (Inventory[i] < 255)
+            {
+                Inventory[i] += 1;
+                added = true;
+            }
+        }
+        else
+        {
+            Inventory.Add(i,1);
+            added = true;
+        }
+
+        return added;
+    }
+
+    public void UseItem(string itemName) {
+        Item i = null;
+        foreach(KeyValuePair<Item, byte> it in Inventory) {
+            if (it.Key.Name.Substring(0,2) == itemName)
+            {
+                i = it.Key;
+                break;
+            }
+        }
+
+        if (i is ConsumableItem)
+        {
+            i.Use();
+            Inventory[i] -= 1;
+            if (Inventory[i] == 0)
+                Inventory.Remove(i);
+        }
+    }
+
+    public int Heal(int heal) {
+        int healedCuantity;
+        if (ActualLife + heal > MaxiumLife) {
+            healedCuantity = MaxiumLife - ActualLife;
+            ActualLife = MaxiumLife;
+        }
+        else {
+            healedCuantity = heal;
+            ActualLife += heal;
+        }
+
+        return healedCuantity;
     }
 }
