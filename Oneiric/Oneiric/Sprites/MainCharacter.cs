@@ -33,7 +33,7 @@ class MainCharacter : Character
         height = 47;
         Inventory = new Dictionary<Item, byte>();
         Name = "Coco";
-        Level = 10;
+        Level = 1;
         LifeIncreaser = 25;
         PmIncreaser = 20;
         DamageIncreaser = 9;
@@ -47,6 +47,7 @@ class MainCharacter : Character
         Speed = SpeedIncreaser * Level;
 
         ActualLife = MaxiumLife;
+        ActualPm = MaxiumPm;
     }
 
     public Dictionary<Item,byte> GetInventory() { return Inventory; }
@@ -104,11 +105,13 @@ class MainCharacter : Character
                 break;
             }
         }
-
+       
         if (i is ConsumableItem)
         {
-            i.Use();
-            Inventory[i] -= 1;
+            bool used = i.Use();
+            if (used)
+                Inventory[i] -= 1;
+
             if (Inventory[i] == 0)
                 Inventory.Remove(i);
         }

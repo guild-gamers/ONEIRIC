@@ -1,7 +1,8 @@
+#tipo;nombre;cura;lfI;pmI;daI;deI;spI;luI;rarity
 c;mini potion;20;0;0;0;0;0;0;1
 c;potion;50;0;0;0;0;0;0;1
 c;super potion;80;0;0;0;0;0;0;1
 c;ultra potion;150;0;0;0;0;0;0;1
 c;mega potion;250;0;0;0;0;0;0;1
-c;elixir;0;0;0;0;0;0;0;1
+c;elixir;9999;0;0;0;0;0;0;1
 c;vitamins;0;1;0;0;0;0;0;1

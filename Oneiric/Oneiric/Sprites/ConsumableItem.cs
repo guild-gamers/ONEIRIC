@@ -11,9 +11,15 @@ class ConsumableItem : Item
         Heal = heal;
     }
 
-    public override void Use()
+    public override bool Use()
     {
-        Oneiric.g.Mcharacter.Heal(Heal);
-        base.Use();
+        bool used = base.Use();
+        if (Oneiric.g.Mcharacter.ActualLife != Oneiric.g.Mcharacter.MaxiumLife)
+        {
+            Oneiric.g.Mcharacter.Heal(Heal);
+            used = true;
+        }
+
+        return used;
     }
 }

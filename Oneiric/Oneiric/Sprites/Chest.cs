@@ -26,7 +26,7 @@ class Chest : InteractibleElement
                 StreamReader file = File.OpenText("data/langs/"+
                     Oneiric.Languages[Oneiric.Language].Substring(
                         0, 2).ToLower() + "/items.dat");
-                string line = "";
+                string line = file.ReadLine();
 
                 do
                 {

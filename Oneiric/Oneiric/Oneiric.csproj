@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Screens\BattleScreen.cs" />
+    <Compile Include="Screens\GameOverScreen.cs" />
     <Compile Include="Screens\Screen.cs" />
     <Compile Include="Sprites\Boss.cs" />
     <Compile Include="Sprites\Character.cs" />

@@ -52,12 +52,13 @@ class GameMenuScreen : Screen
             }
             else if (SdlHardware.KeyPressed(SdlHardware.KEY_RETURN))
             {
-                return ChoosedOption();
+                if (ChoosedOption() == 5)
+                    return ChoosedOption();
             }
             SdlHardware.Pause(100);
         }
-        while (true);
-        //The loop ends when the option choosed is Title or Back.
+        while (!SdlHardware.KeyPressed(SdlHardware.KEY_ESC));
+        return 0;
     }
 
     public int ChoosedOption()
@@ -66,9 +67,11 @@ class GameMenuScreen : Screen
         switch (option)
         {
             case 0:
+                ShowParty();
                 value = 0;
                 break;
             case 1:
+                SdlHardware.Pause(200);
                 ShowInventory();
                 value = 1;
                 break;
@@ -95,67 +98,171 @@ class GameMenuScreen : Screen
         return value;
     }
 
+    public void ShowParty()
+    {
+        SdlHardware.Pause(100);
+        do
+        {
+            SdlHardware.DrawHiddenImage(greyBackground, 0, 0);
+            SdlHardware.DrawHiddenImage(selector, 212, 203);
+            SdlHardware.WriteHiddenText(Oneiric.g.Mcharacter.ActualLife.ToString()
+                + " / " + Oneiric.g.Mcharacter.MaxiumLife.ToString(),
+                252, 202,
+                0x00, 0x00, 0x00,
+                Font28);
+            SdlHardware.WriteHiddenText(Oneiric.g.Mcharacter.ActualLife.ToString()
+                + " / " + Oneiric.g.Mcharacter.MaxiumLife.ToString(),
+                250, 200,
+                0xFF, 0xFF, 0xFF,
+                Font28);
+            SdlHardware.DrawHiddenImage(selector, 212, 253);
+            SdlHardware.WriteHiddenText(Oneiric.g.Mcharacter.ActualPm.ToString()
+                + " / " + Oneiric.g.Mcharacter.MaxiumPm.ToString(),
+                252, 252,
+                0x00, 0x00, 0x00,
+                Font28);
+            SdlHardware.WriteHiddenText(Oneiric.g.Mcharacter.ActualPm.ToString()
+                + " / " + Oneiric.g.Mcharacter.MaxiumPm.ToString(),
+                250, 250,
+                0xFF, 0xFF, 0xFF,
+                Font28);
+            SdlHardware.DrawHiddenImage(selector, 212, 303);
+            SdlHardware.WriteHiddenText(Oneiric.g.Mcharacter.Damage.ToString(),
+                252, 302,
+                0x00, 0x00, 0x00,
+                Font28);
+            SdlHardware.WriteHiddenText(Oneiric.g.Mcharacter.Damage.ToString(),
+                250, 300,
+                0xFF, 0xFF, 0xFF,
+                Font28);
+            SdlHardware.DrawHiddenImage(selector, 212, 353);
+            SdlHardware.WriteHiddenText(Oneiric.g.Mcharacter.Defense.ToString(),
+                252, 352,
+                0x00, 0x00, 0x00,
+                Font28);
+            SdlHardware.WriteHiddenText(Oneiric.g.Mcharacter.Defense.ToString(),
+                250, 350,
+                0xFF, 0xFF, 0xFF,
+                Font28);
+            SdlHardware.DrawHiddenImage(selector, 212, 403);
+            SdlHardware.WriteHiddenText(Oneiric.g.Mcharacter.Speed.ToString(),
+                252, 402,
+                0x00, 0x00, 0x00,
+                Font28);
+            SdlHardware.WriteHiddenText(Oneiric.g.Mcharacter.Speed.ToString(),
+                250, 400,
+                0xFF, 0xFF, 0xFF,
+                Font28);
+            SdlHardware.DrawHiddenImage(selector, 212, 453);
+            SdlHardware.WriteHiddenText(Oneiric.g.Mcharacter.Lucky.ToString(),
+                252, 452,
+                0x00, 0x00, 0x00,
+                Font28);
+            SdlHardware.WriteHiddenText(Oneiric.g.Mcharacter.Lucky.ToString(),
+                250, 450,
+                0xFF, 0xFF, 0xFF,
+                Font28);
+            SdlHardware.WriteHiddenText(Oneiric.g.Mcharacter.Speed.ToString(),
+                250, 400,
+                0xFF, 0xFF, 0xFF,
+                Font28);
+            SdlHardware.WriteHiddenText("ESC -->",
+                602, 622,
+                0x00, 0x00, 0x00,
+                Font28);
+            SdlHardware.WriteHiddenText("ESC -->",
+                600, 620,
+                0xFF, 0xFF, 0xFF,
+                Font28);
+            SdlHardware.ShowHiddenScreen();
+
+            SdlHardware.Pause(100);
+        } while (!SdlHardware.KeyPressed(SdlHardware.KEY_ESC));
+    }
+
+    public List<string> LoadDrawItems() {
+        List<string> dw = new List<string>();
+        if (Oneiric.g.Mcharacter.GetInventory().Count > 0)
+        {
+            foreach (KeyValuePair<Item, byte> i in
+                    Oneiric.g.Mcharacter.GetInventory())
+            {
+                dw.Add(Oneiric.ItemsName[i.Key.Name.Substring(0, 2)]
+                    + " x" + i.Value);
+            }
+
+            return dw;
+        }
+        else
+            return null;
+    }
+
     public void ShowInventory()
     {
         int selected = 0;
-        List<string> drawItems = new List<string>();
-
-        foreach (KeyValuePair<Item, byte> i in
-                Oneiric.g.Mcharacter.GetInventory())
-        {
-            drawItems.Add(Oneiric.ItemsName[i.Key.Name.Substring(0, 2)]
-                + " x" + i.Value);
-        }
 
         do
         {
-            short posX = 200;
-            short posY = 230;
-
-            int index = selected - 10;
-            index = index < 0 ? 0:index;
-
-            SdlHardware.DrawHiddenImage(greyBackground, 0, 0);
-            SdlHardware.DrawHiddenImage(selector, 160, 232 + 30 * selected);
-            for (int i = 0; i < 10 && i < drawItems.Count-1; i++)
+            List<string> drawItems = LoadDrawItems();
+            if (drawItems == null)
             {
-                SdlHardware.WriteHiddenText(drawItems[index],
-                        (short)(posX + 2), (short)(posY + 2),
-                        0x00, 0x00, 0x00,
-                        Font28);
-                SdlHardware.WriteHiddenText(drawItems[index],
-                    posX, posY,
+                SdlHardware.WriteHiddenText("NO HAY OBJETOS",
+                    552, 422,
+                    0x00, 0x00, 0x00,
+                    Font28);
+                SdlHardware.WriteHiddenText("NO HAY OBJETOS",
+                    550, 420,
                     0xFF, 0xFF, 0xFF,
                     Font28);
-                posY += 30;
-                index++;
             }
+            else
+            {
+                short posX = 200;
+                short posY = 230;
 
-            int minSelected = selected - 10;
-            minSelected = minSelected < 10 ? 0 : minSelected;
-            int maxSelected = minSelected + 10;
-            maxSelected = minSelected < 10 ? index-1 : maxSelected;
-            
-            SdlHardware.ShowHiddenScreen();
-            if (SdlHardware.KeyPressed(SdlHardware.KEY_W) && selected >
-                 minSelected)
-            {
-                selected--;
-            }
-            else if (SdlHardware.KeyPressed(SdlHardware.KEY_S) && selected <
-                maxSelected)
-            {
-                selected++;
-            }
-            else if (SdlHardware.KeyPressed(SdlHardware.KEY_RETURN))
-            {
-                Oneiric.g.Mcharacter.UseItem(drawItems[selected]);
-            }
-            SdlHardware.Pause(100);
-            SdlHardware.ShowHiddenScreen();
+                int index = selected - 10;
+                index = index < 0 ? 0 : index;
 
+                SdlHardware.DrawHiddenImage(greyBackground, 0, 0);
+                SdlHardware.DrawHiddenImage(selector, 160, 232 + 30 * selected);
+                for (int i = 0; i < 10 && i < drawItems.Count - 1; i++)
+                {
+                    SdlHardware.WriteHiddenText(drawItems[index],
+                            (short)(posX + 2), (short)(posY + 2),
+                            0x00, 0x00, 0x00,
+                            Font28);
+                    SdlHardware.WriteHiddenText(drawItems[index],
+                        posX, posY,
+                        0xFF, 0xFF, 0xFF,
+                        Font28);
+                    posY += 30;
+                    index++;
+                }
+
+                int minSelected = selected - 10;
+                minSelected = minSelected < 10 ? 0 : minSelected;
+                int maxSelected = minSelected + 10;
+                maxSelected = minSelected < 10 ? index - 1 : maxSelected;
+
+                SdlHardware.ShowHiddenScreen();
+                if (SdlHardware.KeyPressed(SdlHardware.KEY_W) && selected >
+                     minSelected)
+                {
+                    selected--;
+                }
+                else if (SdlHardware.KeyPressed(SdlHardware.KEY_S) && selected <
+                    maxSelected)
+                {
+                    selected++;
+                }
+                else if (SdlHardware.KeyPressed(SdlHardware.KEY_RETURN))
+                {
+                    Oneiric.g.Mcharacter.UseItem(drawItems[selected].Substring(0, 2));
+                }
+                SdlHardware.Pause(100);
+                SdlHardware.ShowHiddenScreen();
+            }
         } while (!SdlHardware.KeyPressed(SdlHardware.KEY_ESC));
-        
     }
 
     public string SelectedOption()

@@ -36,12 +36,44 @@ class Item : Sprite
         return Name.GetHashCode();
     }
 
-    public virtual void Use() {
-        Oneiric.g.Mcharacter.MaxiumLife += LifeIncreaser;
-        Oneiric.g.Mcharacter.MaxiumPm += PmIncreaser;
-        Oneiric.g.Mcharacter.Damage += DamageIncreaser;
-        Oneiric.g.Mcharacter.Defense += DefenseIncreaser;
-        Oneiric.g.Mcharacter.Speed += SpeedIncreaser;
-        Oneiric.g.Mcharacter.Lucky += LuckyIncreaser;
+    public virtual bool Use() {
+        bool used = false;
+        if (LifeIncreaser != 0)
+        {
+            Oneiric.g.Mcharacter.MaxiumLife += LifeIncreaser;
+            used = true;
+        }
+
+        if (PmIncreaser != 0)
+        {
+            Oneiric.g.Mcharacter.MaxiumPm += PmIncreaser;
+            used = true;
+        }
+
+        if (DamageIncreaser != 0)
+        {
+            Oneiric.g.Mcharacter.Damage += DamageIncreaser;
+            used = true;
+        }
+
+        if (DefenseIncreaser != 0)
+        {
+            Oneiric.g.Mcharacter.Defense += DefenseIncreaser;
+            used = true;
+        }
+
+        if (SpeedIncreaser != 0)
+        {
+            Oneiric.g.Mcharacter.Speed += SpeedIncreaser;
+            used = true;
+        }
+
+        if (LuckyIncreaser != 0)
+        {
+            Oneiric.g.Mcharacter.Lucky += LuckyIncreaser;
+            used = true;
+        }
+
+        return used;
     }
 }

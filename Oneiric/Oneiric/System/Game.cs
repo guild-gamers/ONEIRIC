@@ -15,6 +15,7 @@ class Game
     public long Time { get; set; }
     protected GameMenuScreen gm;
     protected BattleScreen bs;
+    protected GameOverScreen go;
     public static int AverageEnemyLevel { get; set; }
 
     public Game()
@@ -170,6 +171,12 @@ class Game
         {
             bs = new BattleScreen();
             bs.Run();
+            if (Mcharacter.ActualLife == 0)
+            {
+                go = new GameOverScreen();
+                go.Run();
+                finished = true;
+            }
             Steps = rand.Next(randMin,randMax);
         }
     }

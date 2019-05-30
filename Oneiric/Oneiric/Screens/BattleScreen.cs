@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 class BattleScreen : Screen
 {
-    protected Image selector, menu, player, historyI;
+    protected Image selector, menu, player, historyI, selector2, items;
     protected static int option;
     protected Font font72, font16;
 
@@ -19,7 +19,9 @@ class BattleScreen : Screen
     {
         option = 0;
         selector = new Image("data/images/other/selector2.png");
+        selector2 = new Image("data/images/other/selector2.png");
         menu = new Image("data/images/other/screen_battle.png");
+        items = new Image("data/images/other/screen_battle.png");
         historyI = new Image("data/images/other/history.png");
         player = new Image("data/images/player/Left_2.png");
         font72 = new Font("data/fonts/Joystix.ttf", 72);
@@ -92,8 +94,7 @@ class BattleScreen : Screen
         }
         else if (SdlHardware.KeyPressed(SdlHardware.KEY_RETURN))
         {
-            SelectedOption(ref endBattle);
-            endPlayerTurn = true;
+            SelectedOption(ref endBattle, ref endPlayerTurn);
         }
     }
 
@@ -111,7 +112,7 @@ class BattleScreen : Screen
         }
     }
 
-    public void SelectedOption(ref bool endBattle)
+    public void SelectedOption(ref bool endBattle, ref bool endPlayerTurn)
     {
         switch (option)
         {
@@ -133,14 +134,114 @@ class BattleScreen : Screen
                     }
                     endBattle = true;
                 }
+                endPlayerTurn = true;
+                break;
+            case 2:
+                endPlayerTurn = ShowItems();
                 break;
             case 4:
                 if (Game.rand.Next(0,1)+1 == 1)
                 {
                     endBattle = true;
                 }
+                endPlayerTurn = true;
                 break;
         }
+    }
+
+    public List<string> LoadDrawItems()
+    {
+        List<string> dw = new List<string>();
+        if (Oneiric.g.Mcharacter.GetInventory().Count > 0)
+        {
+            foreach (KeyValuePair<Item, byte> i in
+                    Oneiric.g.Mcharacter.GetInventory())
+            {
+                if (i.Key is ConsumableItem)
+                {
+                    dw.Add(Oneiric.ItemsName[i.Key.Name.Substring(0, 2)]
+                    + " x" + i.Value);
+                }
+            }
+
+            return dw;
+        }
+        else
+            return null;
+    }
+
+    public bool ShowItems()
+    {
+        int selected = 0;
+
+        do
+        {
+            SdlHardware.Pause(100);
+            List<string> drawItems = LoadDrawItems();
+            if (drawItems == null)
+            {
+                SdlHardware.WriteHiddenText("NO HAY OBJETOS",
+                    552, 422,
+                    0x00, 0x00, 0x00,
+                    Font28);
+                SdlHardware.WriteHiddenText("NO HAY OBJETOS",
+                    550, 420,
+                    0xFF, 0xFF, 0xFF,
+                    Font28);
+            }
+            else
+            {
+                short posX = 840;
+                short posY = 420;
+
+                int index = selected - 6;
+                index = index < 0 ? 0 : index;
+
+                SdlHardware.DrawHiddenImage(items, 780, 400);
+                
+                for (int i = 0; i < 10 && i < drawItems.Count - 1; i++)
+                {
+                    SdlHardware.WriteHiddenText(drawItems[index],
+                        (short)(posX + 2), (short)(posY + 2),
+                        0x00, 0x00, 0x00,
+                        font16);
+                    SdlHardware.WriteHiddenText(drawItems[index],
+                        posX, posY,
+                        0xFF, 0xFF, 0xFF,
+                        font16);
+                    posY += 30;
+                    index++;
+                }
+
+                int minSelected = selected - 10;
+                minSelected = minSelected < 10 ? 0 : minSelected;
+                int maxSelected = minSelected + 10;
+                maxSelected = minSelected < 10 ? index - 1 : maxSelected;
+
+                SdlHardware.ShowHiddenScreen();
+                if (SdlHardware.KeyPressed(SdlHardware.KEY_W) && selected >
+                     minSelected)
+                {
+                    selected--;
+                }
+                else if (SdlHardware.KeyPressed(SdlHardware.KEY_S) && selected <
+                    maxSelected)
+                {
+                    selected++;
+                }
+                else if (SdlHardware.KeyPressed(SdlHardware.KEY_RETURN))
+                {
+                    Oneiric.g.Mcharacter.UseItem(drawItems[selected].Substring(0, 2));
+                    return true;
+                }
+                
+                SdlHardware.DrawHiddenImage(selector2, 800, 418 + 30 * selected);
+                SdlHardware.ShowHiddenScreen();
+                SdlHardware.Pause(100);
+
+            }
+        } while (!SdlHardware.KeyPressed(SdlHardware.KEY_ESC));
+        return false;
     }
 
     public void ShowHistory() {
