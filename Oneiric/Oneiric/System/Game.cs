@@ -17,6 +17,7 @@ class Game
     protected BattleScreen bs;
     protected GameOverScreen go;
     public static int AverageEnemyLevel { get; set; }
+    public bool CanFight { get; set; }
 
     public Game()
     {
@@ -29,6 +30,7 @@ class Game
         Time = 0;
         countTimer = 0;
         AverageEnemyLevel = 6;
+        CanFight = true;
         gm = new GameMenuScreen();
     }
 
@@ -173,12 +175,25 @@ class Game
             bs.Run();
             if (Mcharacter.ActualLife == 0)
             {
-                go = new GameOverScreen();
-                go.Run();
-                finished = true;
+                if (CanFight)
+                {
+                    go = new GameOverScreen();
+                    go.Run();
+                    finished = true;
+                }
+                else
+                {
+                    Steps = RandomSteps();
+                }
+                
             }
-            Steps = rand.Next(randMin,randMax);
+            Steps = RandomSteps();
         }
+    }
+
+    int RandomSteps()
+    {
+        return rand.Next(randMin, randMax);
     }
 
     void Timer()

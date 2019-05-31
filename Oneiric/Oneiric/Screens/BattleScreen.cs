@@ -12,6 +12,7 @@ class BattleScreen : Screen
     protected static NormalEnemy enemy;
     protected Queue<string> history;
     protected Dictionary<string,string> battleTexts;
+    protected bool protecting;
 
     public BattleScreen()
         : base(new Image("data/images/other/battleBackground.png"),
@@ -33,6 +34,7 @@ class BattleScreen : Screen
         {
             history.Enqueue(" ");
         }
+        protecting = false;
     }
 
     public int GetChosenOption()
@@ -78,6 +80,10 @@ class BattleScreen : Screen
 
     public void PlayerTurn(ref bool endBattle, ref bool endPlayerTurn)
     {
+        if (protecting)
+        {
+            Oneiric.g.Mcharacter.Defense /= 2;
+        }
         if (SdlHardware.KeyPressed(SdlHardware.KEY_W) && option >
                 YCURSOR_MIN)
         {
@@ -136,8 +142,14 @@ class BattleScreen : Screen
                 }
                 endPlayerTurn = true;
                 break;
+            case 1:
+                break;
             case 2:
                 endPlayerTurn = ShowItems();
+                break;
+            case 3:
+                Oneiric.g.Mcharacter.Protect();
+                protecting = true;
                 break;
             case 4:
                 if (Game.rand.Next(0,1)+1 == 1)

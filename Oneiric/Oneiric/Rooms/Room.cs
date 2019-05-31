@@ -16,8 +16,8 @@ class Room
     public string[] levelData;
     protected char[,] mapData;
 
-    public byte ActualCol = 1;
-    public byte ActualRow = 1;
+    public byte ActualCol = 0;
+    public byte ActualRow = 0;
 
     public List<Chest> chests;
 
@@ -34,12 +34,11 @@ class Room
         images[8] = new Image("data/images/map/wall1MidCenterVertical.jpg");
         images[9] = new Image("data/images/map/wall1MidCenterHorizontal.jpg");
         images[10] = new Image("data/images/map/wall1EndUpRightCorner.jpg");
-        images[11] = new Image("data/images/map/wall1EndUpRightCorner.jpg");
-        images[12] = new Image("data/images/map/wall1EndUpLeftCorner.jpg");
-        images[13] = new Image("data/images/map/wall1EndDownRightCorner.jpg");
-        images[14] = new Image("data/images/map/wall1EndDownLeftCorner.jpg");
-        levelData = File.ReadAllLines("data/maps/level.map");
+        images[11] = new Image("data/images/map/wall1EndUpLeftCorner.jpg");
+        images[12] = new Image("data/images/map/wall1EndDownRightCorner.jpg");
+        images[13] = new Image("data/images/map/wall1EndDownLeftCorner.jpg");
         chests = new List<Chest>();
+        LoadDefaultMap();
         mapData = new char[mapWidth, mapHeight];
         UpdateScreenMap(ActualCol, ActualRow);
     }
@@ -79,11 +78,26 @@ class Room
                     case 'R':
                         SdlHardware.DrawHiddenImage(images[4], posX,
                         posY); break;
-                    case 'F':
-                        SdlHardware.DrawHiddenImage(images[6], posX,
-                        posY); break;
                     case 'P':
                         SdlHardware.DrawHiddenImage(images[5], posX,
+                        posY); break;
+                    case 'I':
+                        SdlHardware.DrawHiddenImage(images[11], posX,
+                        posY); break;
+                    case 'D':
+                        SdlHardware.DrawHiddenImage(images[10], posX,
+                        posY); break;
+                    case 'H':
+                        SdlHardware.DrawHiddenImage(images[9], posX,
+                        posY); break;
+                    case 'V':
+                        SdlHardware.DrawHiddenImage(images[8], posX,
+                        posY); break;
+                    case 'L':
+                        SdlHardware.DrawHiddenImage(images[13], posX,
+                        posY); break;
+                    case 'J':
+                        SdlHardware.DrawHiddenImage(images[12], posX,
                         posY); break;
                     case 'C':
                         mapData[col, row] = 'T';
@@ -106,6 +120,16 @@ class Room
         }
         foreach (Chest c in chests)
             c.DrawOnHiddenScreen();
+    }
+
+    public void LoadMap(string route)
+    {
+        levelData = File.ReadAllLines("data/" + route);
+    }
+
+    public void LoadDefaultMap()
+    {
+        LoadMap("maps/level.map");
     }
 
     public bool CanMoveTo(int x1, int y1, int x2, int y2)

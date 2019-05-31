@@ -28,7 +28,7 @@ abstract class Enemy : Character
                 Oneiric.Languages[Oneiric.Language].Substring(
                     0, 2).ToLower() + "/items.dat");
 
-            string line = "";
+            string line = file.ReadLine();
 
             do
             {

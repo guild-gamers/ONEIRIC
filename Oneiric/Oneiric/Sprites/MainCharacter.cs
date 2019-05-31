@@ -33,7 +33,7 @@ class MainCharacter : Character
         height = 47;
         Inventory = new Dictionary<Item, byte>();
         Name = "Coco";
-        Level = 1;
+        Level = 10;
         LifeIncreaser = 25;
         PmIncreaser = 20;
         DamageIncreaser = 9;
@@ -129,5 +129,10 @@ class MainCharacter : Character
         }
 
         return healedCuantity;
+    }
+
+    public void Protect()
+    {
+        Defense *= 2;
     }
 }

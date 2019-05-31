@@ -74,7 +74,6 @@
     <Compile Include="Sprites\Enemy.cs" />
     <Compile Include="Sprites\EquipableItem.cs" />
     <Compile Include="Sprites\InteractibleElement.cs" />
-    <Compile Include="System\Evento.cs" />
     <Compile Include="System\Font.cs" />
     <Compile Include="System\Game.cs" />
     <Compile Include="Screens\HelpScreen.cs" />
