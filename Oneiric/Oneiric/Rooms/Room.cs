@@ -3,7 +3,7 @@ using System.IO;
 
 class Room
 {
-    const int TOTAL_IMAGES = 10;
+    const int TOTAL_IMAGES = 20;
     protected Image[] images = new Image[TOTAL_IMAGES];
 
     public int mapHeight = 16, mapWidth = 25;
@@ -26,6 +26,18 @@ class Room
         images[0] = new Image("data/images/map/floor1.jpg");
         images[1] = new Image("data/images/map/wall1Down.jpg");
         images[2] = new Image("data/images/map/table.png");
+        images[3] = new Image("data/images/map/wall1Center.jpg");
+        images[4] = new Image("data/images/map/wall1Up.jpg");
+        images[5] = new Image("data/images/map/wall1Center.jpg");
+        images[6] = new Image("data/images/map/wall1EndDownCenter.jpg");
+        images[7] = new Image("data/images/map/wall1EndUpCenter.jpg");
+        images[8] = new Image("data/images/map/wall1MidCenterVertical.jpg");
+        images[9] = new Image("data/images/map/wall1MidCenterHorizontal.jpg");
+        images[10] = new Image("data/images/map/wall1EndUpRightCorner.jpg");
+        images[11] = new Image("data/images/map/wall1EndUpRightCorner.jpg");
+        images[12] = new Image("data/images/map/wall1EndUpLeftCorner.jpg");
+        images[13] = new Image("data/images/map/wall1EndDownRightCorner.jpg");
+        images[14] = new Image("data/images/map/wall1EndDownLeftCorner.jpg");
         levelData = File.ReadAllLines("data/maps/level.map");
         chests = new List<Chest>();
         mapData = new char[mapWidth, mapHeight];
@@ -63,6 +75,15 @@ class Room
                         posY); break;
                     case 'W':
                         SdlHardware.DrawHiddenImage(images[1], posX,
+                        posY); break;
+                    case 'R':
+                        SdlHardware.DrawHiddenImage(images[4], posX,
+                        posY); break;
+                    case 'F':
+                        SdlHardware.DrawHiddenImage(images[6], posX,
+                        posY); break;
+                    case 'P':
+                        SdlHardware.DrawHiddenImage(images[5], posX,
                         posY); break;
                     case 'C':
                         mapData[col, row] = 'T';

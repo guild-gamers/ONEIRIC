@@ -1669,3 +1669,8 @@
    en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
    en System.Convert.ToInt32(String value)
    en Enemy.LoadItems() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Sprites\Enemy.cs:línea 57
+31/05/2019 12:13:51 → Error: System.FormatException: La cadena de entrada no tiene el formato correcto.
+   en System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   en System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   en System.Convert.ToInt32(String value)
+   en Enemy.LoadItems() en D:\Desktop\ONEIRIC\Oneiric\Oneiric\Sprites\Enemy.cs:línea 57

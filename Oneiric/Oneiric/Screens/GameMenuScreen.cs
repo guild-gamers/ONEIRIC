@@ -4,12 +4,14 @@ using System;
 [Serializable]
 class GameMenuScreen : Screen
 {
-    protected Image selector, secondSelector, saveBackground, greyBackground;
+    protected Image selector, secondSelector, saveBackground, greyBackground, face;
+    protected Image[] icons;
     protected int option;
     protected Font font72;
 
     const int YCURSOR_MAX = 6;
     const int YCURSOR_MIN = 0;
+    const int TOTAL_ICONS = 7;
 
     public GameMenuScreen()
         : base(new Image("data/images/other/menuInGame.png"),
@@ -20,6 +22,15 @@ class GameMenuScreen : Screen
         secondSelector = new Image("data/images/other/selector2.png");
         saveBackground = new Image("data/images/other/loadGame.png");
         greyBackground = new Image("data/images/other/greyBackground.png");
+        face = new Image("data/images/player/Face.png");
+        icons = new Image[TOTAL_ICONS];
+        icons[0] = new Image("data/images/other/icons/Life.png");
+        icons[1] = new Image("data/images/other/icons/Laptoop.png");
+        icons[2] = new Image("data/images/other/icons/Damage.png");
+        icons[3] = new Image("data/images/other/icons/Defense.png");
+        icons[4] = new Image("data/images/other/icons/XP.png");
+        icons[5] = new Image("data/images/other/icons/Speed.png");
+        icons[6] = new Image("data/images/other/icons/Lucky.png");
         font72 = new Font("data/fonts/Joystix.ttf", 72);
         texts = new Dictionary<string, string>();
     }
@@ -52,8 +63,12 @@ class GameMenuScreen : Screen
             }
             else if (SdlHardware.KeyPressed(SdlHardware.KEY_RETURN))
             {
-                if (ChoosedOption() == 5)
+                int optionSelected = ChoosedOption();
+                if (optionSelected == 5 || optionSelected == YCURSOR_MAX)
+                {
                     return ChoosedOption();
+                }
+                SdlHardware.Pause(200);
             }
             SdlHardware.Pause(100);
         }
@@ -104,7 +119,8 @@ class GameMenuScreen : Screen
         do
         {
             SdlHardware.DrawHiddenImage(greyBackground, 0, 0);
-            SdlHardware.DrawHiddenImage(selector, 212, 203);
+            SdlHardware.DrawHiddenImage(face, 620, 200);
+            SdlHardware.DrawHiddenImage(icons[0], 212, 200);
             SdlHardware.WriteHiddenText(Oneiric.g.Mcharacter.ActualLife.ToString()
                 + " / " + Oneiric.g.Mcharacter.MaxiumLife.ToString(),
                 252, 202,
@@ -115,7 +131,7 @@ class GameMenuScreen : Screen
                 250, 200,
                 0xFF, 0xFF, 0xFF,
                 Font28);
-            SdlHardware.DrawHiddenImage(selector, 212, 253);
+            SdlHardware.DrawHiddenImage(icons[1], 212, 250);
             SdlHardware.WriteHiddenText(Oneiric.g.Mcharacter.ActualPm.ToString()
                 + " / " + Oneiric.g.Mcharacter.MaxiumPm.ToString(),
                 252, 252,
@@ -126,7 +142,7 @@ class GameMenuScreen : Screen
                 250, 250,
                 0xFF, 0xFF, 0xFF,
                 Font28);
-            SdlHardware.DrawHiddenImage(selector, 212, 303);
+            SdlHardware.DrawHiddenImage(icons[2], 212, 300);
             SdlHardware.WriteHiddenText(Oneiric.g.Mcharacter.Damage.ToString(),
                 252, 302,
                 0x00, 0x00, 0x00,
@@ -135,7 +151,7 @@ class GameMenuScreen : Screen
                 250, 300,
                 0xFF, 0xFF, 0xFF,
                 Font28);
-            SdlHardware.DrawHiddenImage(selector, 212, 353);
+            SdlHardware.DrawHiddenImage(icons[3], 212, 350);
             SdlHardware.WriteHiddenText(Oneiric.g.Mcharacter.Defense.ToString(),
                 252, 352,
                 0x00, 0x00, 0x00,
@@ -144,7 +160,7 @@ class GameMenuScreen : Screen
                 250, 350,
                 0xFF, 0xFF, 0xFF,
                 Font28);
-            SdlHardware.DrawHiddenImage(selector, 212, 403);
+            SdlHardware.DrawHiddenImage(icons[5], 212, 400);
             SdlHardware.WriteHiddenText(Oneiric.g.Mcharacter.Speed.ToString(),
                 252, 402,
                 0x00, 0x00, 0x00,
@@ -153,7 +169,7 @@ class GameMenuScreen : Screen
                 250, 400,
                 0xFF, 0xFF, 0xFF,
                 Font28);
-            SdlHardware.DrawHiddenImage(selector, 212, 453);
+            SdlHardware.DrawHiddenImage(icons[6], 212, 450);
             SdlHardware.WriteHiddenText(Oneiric.g.Mcharacter.Lucky.ToString(),
                 252, 452,
                 0x00, 0x00, 0x00,
